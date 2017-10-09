@@ -427,14 +427,6 @@ p {
   margin: 0 auto;
 }
 
-agm-map {
-  height: 900px;
-}
-
-.map {
-  margin-top: 48px;
-}
-
 @media screen and (max-width:576px) {
   .loc-item1 {
     height: 150px;
@@ -445,6 +437,15 @@ agm-map {
   .loc-item3 {
     height: 150px;
   }
+}
+
+/* angular google map + snazzy info window */
+agm-map {
+  height: 700px;
+}
+
+.map {
+  margin-top: 48px;
 }
 
 

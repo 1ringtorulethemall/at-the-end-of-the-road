@@ -23,7 +23,7 @@ import { PlanComponent } from './gite/plan/plan.component';
 import { ExterieursComponent } from './gite/exterieurs/exterieurs.component';
 
 import { AccesComponent } from './acces/acces.component';
-import {MapModule} from './custom-modules/map/map.module';
+import { MapModule } from './custom-modules/map/map.module';
 
 @NgModule({
   imports: [

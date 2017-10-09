@@ -1,5 +1,16 @@
 <!-- this creates a google map on the page with the given lat/lng from -->
 <!-- the component as the initial center of the map: -->
-<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [mapTypeId]="mapTypeId"
+ fullscreenControl="true"  mapTypeControl="true">
+  <agm-marker *ngFor="let m of markers; let i = index" [latitude]="m.lat" [longitude]="m.lng" [label]="m.label">
+    <agm-snazzy-info-window [maxWidth]="300" [closeWhenOthersOpen]="true">
+      <ng-template>
+        <strong>{{m.nfoTitle | uppercase}}</strong>
+        <hr *ngIf="m.nfoWindow">
+        <em *ngIf="m.nfoWindow">{{m.nfoWindow}}</em>
+      </ng-template>
+    </agm-snazzy-info-window>
+    <!-- TODO:https://rawgit.com/atmist/snazzy-info-window/master/examples/complex-styles/index.html -->
+    <!-- //old <agm-info-window><strong>{{m.nfoWindow}}</strong></agm-info-window>-->
+  </agm-marker>
 </agm-map>
