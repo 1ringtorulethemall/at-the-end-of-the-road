@@ -34,7 +34,7 @@ export class NgbdModal1 {
 
 export class NgbdModal2 {
 
-  constructor(private modalService: ModalService) { }
+  constructor(private modalService: ModalService) {}
 
   open() {
     this.modalService.showModal();

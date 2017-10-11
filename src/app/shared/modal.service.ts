@@ -4,7 +4,7 @@ import { Subject } from 'rxjs/Subject';
 @Injectable()
 export class ModalService {
 
-  //constructor() { }
+  constructor() { }
 
   subscription = new Subject();
   showModal() {

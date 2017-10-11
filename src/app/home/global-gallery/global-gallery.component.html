@@ -5,29 +5,9 @@
       Le gîte du bout de la route est une maison typique savoyarde du 18ème siècle dans un hameau de moyenne montagne offrant une très belle vue sur le massif.<br>Nous sommes situés à Bellecombe, au cœur du parc naturel des Bauges, entre Annecy et Chambéry.
     </p>
     <div class="grid mt-5">
-      <div class="cell">
-        <img class="img-fluid rounded-corners" src="assets/images/home/gallery/exterieurs.jpg">
-      </div>
-      <div class="cell">
-        <img class="img-fluid rounded-corners" src="assets/images/home/gallery/sejour2.jpg">
-      </div>
-      <div class="cell">
-        <img class="img-fluid rounded-corners" src="assets/images/home/gallery/sejour3.jpg">
-      </div>
-      <div class="cell">
-        <img class="img-fluid rounded-corners" src="assets/images/home/gallery/sejour1.jpg">
-      </div>
-      <div class="cell">
-        <img class="img-fluid rounded-corners" src="assets/images/home/gallery/cuisine.jpg">
-      </div>
-      <div class="cell">
-        <img class="img-fluid rounded-corners" src="assets/images/home/gallery/chb-parents.jpg">
-      </div>
-      <div class="cell">
-        <img class="img-fluid rounded-corners" src="assets/images/home/gallery/chb-enfants.jpg">
-      </div>
-      <div class="cell">
-        <img class="img-fluid rounded-corners" src="assets/images/home/gallery/vue.jpg">
+      <div class="cell" *ngFor="let p of pictures; let i = index">
+        <img class="img-fluid rounded-corners" src={{p.img}} *ngIf='!p.imgWinterView ||(p.imgWinterView && !isWinter)'>
+        <img class="img-fluid rounded-corners" src={{p.imgWinterView}} *ngIf='p.imgWinterView && isWinter'>
       </div>
     </div>
     <a class="btn btn-outline-secondary" [routerLink]="['/gite']" role="button">Voir plus d'images</a>

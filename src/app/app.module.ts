@@ -9,6 +9,8 @@ import { ModalService } from './shared/modal.service';
 import { NgbdModal1 } from './shared/contact.component';
 import { NgbdModal2 } from './shared/contact.component';
 
+import {SeasonService} from './shared/seasons/season.service'
+
 import { HomeComponent } from './home/home.component';
 import { CarouselModule } from './custom-modules/carousel/carousel.module';
 import { GlobalGalleryComponent } from './home/global-gallery/global-gallery.component';
@@ -24,6 +26,7 @@ import { ExterieursComponent } from './gite/exterieurs/exterieurs.component';
 
 import { AccesComponent } from './acces/acces.component';
 import { MapModule } from './custom-modules/map/map.module';
+
 
 @NgModule({
   imports: [
@@ -41,7 +44,7 @@ import { MapModule } from './custom-modules/map/map.module';
   ],
   declarations: [AppComponent, HomeComponent, NgbdModal1, NgbdModal2, GlobalGalleryComponent, InfosPratiquesComponent, TarifsDisposComponent, GiteComponent, AccesComponent, SejourCuisineComponent, ChbParentsComponent, ChbEnfantsComponent, PlanComponent, ExterieursComponent],
   bootstrap: [AppComponent],
-  providers: [ModalService]
+  providers: [ModalService,SeasonService]
 })
 
 export class AppModule {

@@ -1,4 +1,17 @@
 <!-- MODAL WINDOW -->
+<ng-template #seasonChoice let-c="close">
+  <div class="modal-header">
+    <h4 class="modal-title">Choix visuel de la saison ?</h4>
+  </div>
+  <div class="modal-body">
+    <p>Vous pouvez choisir ici de voir des paysages enneigés ou de vertes prairies</p>
+  </div>
+  <div class="modal-footer">
+    <button *ngFor="let s of seasons; let i = index" type="button" class="btn btn-outline-dark" (click)="c(s.name)">{{s.name}}</button>
+  </div>
+</ng-template>
+
+
 <ng-template #contact let-c="close" let-d="dismiss">
   <div class="modal-header">
     <h4 class="modal-title">Pour nous contacter</h4>
@@ -41,6 +54,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['/acces']" routerLinkActive="active" (click)="navbarCollapsed = true">LOCALISATION & ACCÈS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="setSeason()">saisons</a>
       </li>
       <li class="nav-item">
         <!--<a class="nav-link" href="#" (click)="navbarCollapsed = true">CONTACT</a>-->

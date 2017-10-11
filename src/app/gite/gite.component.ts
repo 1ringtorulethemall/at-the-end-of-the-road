@@ -6,11 +6,6 @@ import { Component } from '@angular/core';
 })
 export class GiteComponent {
 
-  //gestion vues fenêtres
-  showOutside: boolean = false;
-  toggleVue(): void {
-    console.log('toggleVue clicked');
-    this.showOutside = !this.showOutside;
-  }
+  
 
 }
