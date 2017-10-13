@@ -13,9 +13,7 @@
         <img class="img-fluid rounded-corners" src={{p.d_imgWinterView}} *ngIf='p.d_imgWinterView && p.outsideViewEnabled && isWinter'>
         <img class="img-fluid rounded-corners" src={{p.d_imgSummerView}} *ngIf='p.d_imgSummerView && p.outsideViewEnabled && !isWinter'>
         <h4 class="mt-4">{{p.title}}</h4>
-        <p>
-          {{p.comment}}
-        </p>
+        <p>{{p.comment}}</p>
         <p>
           <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.w_imgSummerView || p.w_imgWinterView">{{p.outsideViewEnabled?"Fermer la fenêtre":"Ouvrir la fenêtre"}}</a>
         </p>

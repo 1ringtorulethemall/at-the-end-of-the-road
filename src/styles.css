@@ -1,6 +1,4 @@
 /* mis dans angular-cli*/
-
-
 /*@import '~bootstrap/dist/css/bootstrap.min.css';*/
 
 body {
@@ -23,6 +21,9 @@ nav, ngb-carousel {
   border: 20px solid #222;
   border-top: none;
   border-bottom: none;
+}
+.nav-item em{
+  padding-left:5px;
 }
 
 @media screen and (max-width:576px) {
@@ -105,7 +106,11 @@ p {
   background: none;
 }
 
-.btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+.btn-outline-primary.focus,.btn-outline-primary:focus {
+ box-shadow:none;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus.btn-outline-primary.active,.btn-outline-primary:active,.show>.btn-outline-primary.dropdown-toggle {
   background-color: #249300;
   border-color: #249300;
   color: #fff;
@@ -123,12 +128,9 @@ p {
   color: #fff !important;
 }
 
-
 /*--------------- @COMPONENTS -----------------------*/
 
-
 /*  NAVBAR ---------------------------------------*/
-
 
 /* burger color */
 
@@ -139,15 +141,49 @@ p {
 
 /* MODAL POPUP ---------------------------------------*/
 
-.dark-modal .modal-content {
-  background-color: #292b2c;
-  color: white;
+.season-choice-header {
+  padding: 15px;
+  border-bottom: 1px solid #e9ecef;
+  text-align: center;
 }
 
-.dark-modal .close {
-  color: white;
+ .season-choice-body {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
+.contact-header {
+  padding: 15px;
+  border-bottom: 1px solid #e9ecef;
+  text-align: center;
+}
+
+.contact-body {
+ text-align: center;
+ padding-left: 13%;
+ padding-right: 13%;
+}
+
+.contact-body a{
+
+  color: #696b6e;
+  font-size: .9rem;
+}
+
+.modal-body .btn{
+  margin:12px;
+}
+
+.modal-body em{
+  padding-right:8px;
+}
+
+.contact-footer {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #e9ecef;
+}
 
 /*  GALLERY ---------------------------------------*/
 
@@ -251,7 +287,7 @@ p {
 }
 
 
-/* infos-pratiques sur la home*/
+/* infos-pratiques home*/
 
 .resume {
   padding: 5rem 0;
@@ -265,6 +301,7 @@ p {
   color: #249300;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 5rem;
+  font-weight: 500;
   margin-bottom: 0px;
 }
 
@@ -286,7 +323,7 @@ p {
 }
 
 
-/* extension equipements */
+/* equipments extension */
 
 .emphasis {
   font-family: Georgia, Times, 'Times New Roman';
@@ -379,6 +416,10 @@ p {
   background: none;
   border: 0.15rem solid #696b6e;
   color: #fff;
+}
+
+.dates-tarifs .btn-outline-primary em{
+  padding-right:15px;
 }
 
 

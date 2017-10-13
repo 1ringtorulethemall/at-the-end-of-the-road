@@ -10,8 +10,8 @@ import { Season } from './season';
 export class SeasonService {
 
   SEASONS: Season[] = [
-    { name: 'Été', isCurrent: false, },
-    { name: 'Hiver', isCurrent: false, } // !! winter pos =1
+    { name: 'Été', isCurrent: false},
+    { name: 'Hiver', isCurrent: false} // !! winter pos =1
   ]
 
   private subject = new Subject<any>();

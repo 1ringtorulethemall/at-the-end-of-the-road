@@ -3,12 +3,15 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 import { SeasonService } from '../../shared/seasons/season.service';
 
+
 @Component({
   selector: 'sejour-cuisine',
   templateUrl: './sejour-cuisine.component.html'
 })
 
-export class SejourCuisineComponent implements OnInit {
+export class SejourCuisineComponent implements OnInit, OnDestroy {
+
+
 
   subscription: Subscription;
   isWinter: boolean;
@@ -26,9 +29,9 @@ export class SejourCuisineComponent implements OnInit {
     }
 
   ngOnInit(): void {
-  //  this.isWinter = this.seasonService.isWinter();
-    //console.log("ngOnInit isWinter=" + this.isWinter);
+    this.isWinter = this.seasonService.isWinter();
   }
+
 
   //gestion vues fenêtres
   toggleVue(i: number): void {
@@ -82,8 +85,8 @@ export class SejourCuisineComponent implements OnInit {
     {
       img: "assets/images/gite/sejour-cuisine/06120025.jpg",
       outsideViewEnabled: false,
-      title: 'la cuisine',
-      comment: 'des rangements du 18ème siècle sont intégrés dans les murs',
+      title: 'La cuisine',
+      comment: 'De nombreux rangements du 18ème siècle sont intégrés dans les murs. ++BTN VERS EQUIPEMENTS CUISINE ou reload compo',
     }
   ];
 }

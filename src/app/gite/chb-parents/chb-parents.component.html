@@ -2,38 +2,18 @@
   <div class="container-fluid gallery">
     <h2>La chambre parents</h2>
     <p class="lead">
-      Orientée nord-est et ensoleilée le matin, elle offre une vue sur le roc des Boeufs qui domine le lac d'Annecy.
+      Orientée nord-est et ensoleillée le matin, elle offre une vue sur le roc des Boeufs qui domine le lac d'Annecy et Bellecombe chef-lieu à 1km.
     </p>
     <div class="divider"></div>
     <div class="row">
-      <div class="col-md-6 col-lg-4 col-gallery">
-        <img class="img-fluid rounded-corners" src="assets/images/gite/chambre-parents/05260017.jpg">
-        <h4 class="mt-4">Un grand lit double 160x200</h4>
+      <div class="col-md-6 col-lg-4 col-gallery" *ngFor="let p of pictures;let i = index">
+        <img class="img-fluid rounded-corners" src={{p.img}} *ngIf='!p.outsideViewEnabled'>
+        <img class="img-fluid rounded-corners" src={{p.w_imgWinterView}} *ngIf='p.w_imgWinterView && p.outsideViewEnabled && isWinter'>
+        <img class="img-fluid rounded-corners" src={{p.w_imgSummerView}} *ngIf='p.w_imgSummerView && p.outsideViewEnabled && !isWinter'>
+        <h4 class="mt-4">{{p.title}}</h4>
+        <p>{{p.comment}}</p>
         <p>
-          Nous pouvons fournir le linge de lit sur demande
-        </p>
-        <p>
-          <a class="btn btn-outline-secondary" href="#" role="button">Ouvrir la fenêtre</a>
-        </p>
-      </div>
-      <div class="col-md-6 col-lg-4 col-gallery">
-        <img class="img-fluid rounded-corners" src="assets/images/gite/chambre-parents/05260017-2.jpg">
-        <h4 class="mt-4">Blabla bla</h4>
-        <p>
-          Blabla bla
-        </p>
-        <p>
-          <a class="btn btn-outline-secondary" href="#" role="button">Blabla bla</a>
-        </p>
-      </div>
-      <div class="col-md-6 col-lg-4 col-gallery">
-        <img class="img-fluid rounded-corners" src="assets/images/gite/chambre-parents/05260017-3.jpg">
-        <h4 class="mt-4">Blabla bla</h4>
-        <p>
-          Blabla bla
-        </p>
-        <p>
-          <a class="btn btn-outline-secondary" href="#" role="button">Blabla bla</a>
+          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.w_imgSummerView || p.w_imgWinterView">{{p.outsideViewEnabled?"Fermer la fenêtre":"Ouvrir la fenêtre"}}</a>
         </p>
       </div>
     </div>

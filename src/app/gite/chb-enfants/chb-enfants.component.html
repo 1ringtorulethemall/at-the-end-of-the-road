@@ -6,6 +6,20 @@
     </p>
     <div class="divider"></div>
     <div class="row">
+
+      <div class="col-md-6 col-lg-4 col-gallery" *ngFor="let p of pictures;let i = index">
+        <img class="img-fluid rounded-corners" src={{p.img}} *ngIf='!p.outsideViewEnabled'>
+        <img class="img-fluid rounded-corners" src={{p.d_imgWinterView}} *ngIf='p.d_imgWinterView && p.outsideViewEnabled && isWinter'>
+        <img class="img-fluid rounded-corners" src={{p.d_imgSummerView}} *ngIf='p.d_imgSummerView && p.outsideViewEnabled && !isWinter'>
+        <h4 class="mt-4">{{p.title}}</h4>
+        <p>{{p.comment}}</p>
+        <p>
+          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.d_imgSummerView || p.d_imgWinterView">{{p.outsideViewEnabled?"Fermer la porte":"Ouvrir la porte"}}</a>
+        </p>
+      </div>
+
+<!--
+
       <div class="col-md-6 col-lg-4 col-gallery">
         <img class="img-fluid rounded-corners" src="assets/images/gite/chambre-enfants/05260030.jpg">
         <h4 class="mt-4">2 couchages superposés 90x200 et un lit tiroir optionnel</h4>
@@ -47,6 +61,7 @@
           <a class="btn btn-outline-secondary" href="#" role="button">Voir la vue</a>
         </p>
       </div>
+    -->
     </div>
   </div>
 </section>

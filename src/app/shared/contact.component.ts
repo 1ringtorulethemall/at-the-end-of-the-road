@@ -6,9 +6,7 @@ import { ModalService } from './modal.service';
   selector: 'ngbd-modal1',
   template: `
   <!-- TODO:  navbarCollapsed = true not effective-->
-  <button class="btn btn-lg btn-outline-primary"  (click)="open()">
-  Nous contacter pour réserver
-  </button>
+  <button class="btn btn-lg btn-outline-primary" (click)="open()" role="button"><em class="fa fa-paper-plane-o fa-fw" aria-hidden="true"></em>Nous contacter pour réserver</button>
   `
 })
 export class NgbdModal1 {
@@ -24,12 +22,9 @@ export class NgbdModal1 {
 @Component({
   selector: 'ngbd-modal2',
   template: `
-  <!-- TODO:  navbarCollapsed = true not effective  // me sort une erreur au ng build-->
-  <!--<a class="nav-link" (click)='open();navbarCollapsed = true'>-->
-  <a class="nav-link" (click)='open()'>
-  CONTACT
-  </a>
+  <a class="nav-link" (click)='open()' role="button" [routerLink]="">CONTACT<em class="fa fa-paper-plane fa-fw" aria-hidden="true"></em></a>
   `
+  // NOTE: [routerLink]="" allows to show handcursor
 })
 
 export class NgbdModal2 {

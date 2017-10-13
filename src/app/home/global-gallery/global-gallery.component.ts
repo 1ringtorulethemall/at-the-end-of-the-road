@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 import { Subscription } from 'rxjs/Subscription';
 import { SeasonService } from '../../shared/seasons/season.service';
@@ -7,7 +7,7 @@ import { SeasonService } from '../../shared/seasons/season.service';
   selector: 'global-gallery',
   templateUrl: './global-gallery.component.html'
 })
-export class GlobalGalleryComponent implements OnDestroy {
+export class GlobalGalleryComponent implements OnInit, OnDestroy {
 
   subscription: Subscription;
   isWinter: boolean;
@@ -17,6 +17,11 @@ export class GlobalGalleryComponent implements OnDestroy {
     this.subscription = this.seasonService.getMessage().subscribe(message => {
     this.isWinter= message.isWinter_;
     });
+  }
+
+  ngOnInit(): void {
+    this.isWinter = this.seasonService.isWinter();
+    //console.log("ngOnInit isWinter=" + this.isWinter);
   }
 
   ngOnDestroy() {
