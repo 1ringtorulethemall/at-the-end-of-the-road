@@ -23,7 +23,11 @@ nav, ngb-carousel {
   border-bottom: none;
 }
 .nav-item em{
-  padding-left:5px;
+  padding-right:5px;
+}
+
+.navbar-brand-custom {
+  font-size: 16px;
 }
 
 @media screen and (max-width:576px) {
@@ -34,6 +38,12 @@ nav, ngb-carousel {
   nav, ngb-carousel {
     border-left: 2px solid #222;
     border-right: 2px solid #222;
+  }
+
+}
+@media screen and (max-width:1024px) {
+  .navbar-brand-custom {
+    font-size: 16px;
   }
 }
 
@@ -140,6 +150,10 @@ p {
 
 
 /* MODAL POPUP ---------------------------------------*/
+.modal {
+
+    top:20%;
+}
 
 .season-choice-header {
   padding: 15px;
@@ -167,7 +181,7 @@ p {
 
 .contact-body a{
 
-  color: #696b6e;
+  color: rgb(70, 72, 74);
   font-size: .9rem;
 }
 
@@ -179,11 +193,6 @@ p {
   padding-right:8px;
 }
 
-.contact-footer {
-  text-align: center;
-  padding: 15px;
-  border-top: 1px solid #e9ecef;
-}
 
 /*  GALLERY ---------------------------------------*/
 
@@ -505,10 +514,5 @@ agm-map {
 @media screen and (max-width:576px) {
   .home-carousel h3 {
     font-size: 10px;
-  }
-  .navbar-brand-custom {
-    font-size: 15px;
-    font-family: Noto, sans-serif;
-    font-weight: bold;
   }
 }

@@ -7,17 +7,11 @@
     <p>Vous pouvez choisir ici de vertes prairies ou des paysages enneigés</p>
     <button *ngFor="let s of seasons; let i = index" type="button" class="btn btn-lg btn-outline-primary" (click)="c(s.name)"> <em class="fa fa-2x fa-leaf" aria-hidden="true" *ngIf='i==0'></em><em class="fa fa-2x fa-snowflake-o" aria-hidden="true" *ngIf='i==1'></em>{{s.name}}</button>
   </div>
-  <!--
-  <div class="modal-footer">
-    <button *ngFor="let s of seasons; let i = index" type="button" class="btn btn-outline-dark" (click)="c(s.name)"> <em class="fa fa-2x fa-leaf" aria-hidden="true" *ngIf='i==0'></em><em class="fa fa-2x fa-snowflake-o" aria-hidden="true" *ngIf='i==1'></em>{{s.name}}</button>
-  </div>
--->
 </ng-template>
-
 
 <ng-template #contact let-c="close" let-d="dismiss">
   <div class="modal-header">
-    <h4 class="modal-title">Pour nous contacter</h4>
+    <h4 class="modal-title mx-auto">Pour nous contacter</h4>
     <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>
@@ -26,46 +20,48 @@
     <p>Le gîte du bout de route<br> Broissieux - 73340 BELLECOMBE EN BAUGES</p>
     <div class="row">
       <div class="col-sm-12 col-lg-6">
+        <p>
         <em class="fa fa-2x fa-phone " aria-hidden="true"></em>04 79 63 38 06
+      </p>
       </div>
       <div class="col-sm-12 col-lg-6">
+        <p>
         <em class="fa fa-2x fa-mobile" aria-hidden="true"></em>06 75 09 94 59<br><br>
+      </p>
       </div>
     </div>
     <p>
       <a href="mailto:contact@auboutdelaroute.com?subject=Contact depuis auboutdelaroute.com"><em class="fa fa-2x fa-envelope-o" aria-hidden="true"></em>contact@auboutdelaroute.com</a>
     </p>
   </div>
-  <div class="contact-footer">
-    <button type="button" class="btn btn-lg btn-outline-secondary" (click)="c('Close click')">Fermer</button>
-  </div>
 </ng-template>
 
 <!-- NAVIGATION -->
 <!-- TODO: navbarcollapse animé -->
 <!-- NOTE: fixed-top (pas de décalage en burger menu) vs sticky-top (fixed-top + décalage // sticky-top pas supporté ds tous les browsers) -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand navbar-brand-custom" [routerLink]="['/home']" (click)="navbarCollapsed = true">LE GÎTE DU BOUT DE LA ROUTE</a>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark ">
+  <span class="h1" class="navbar-brand navbar-brand-custom">LE GÎTE DU BOUT DE LA ROUTE</span>
 
   <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navGite" aria-controls="navGite" (click)="navbarCollapsed = !navbarCollapsed " aria-expanded="!navbarCollapsed" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navGite">
-    <!--<ul class="navbar-nav mr-auto mt-2 mt-lg-0">-->
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-xl-5 pl-xl-5 ml-lg-0 pl-lg-0">
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" (click)="navbarCollapsed = true" role="button">ACCUEIL</a>
+        <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" (click)="navbarCollapsed = true" role="button"><em class="fa fa-fw fa-home" aria-hidden="true" ></em>ACCUEIL</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/gite']" routerLinkActive="active" (click)="navbarCollapsed = true" role="button">LE GÎTE</a>
+        <a class="nav-link" [routerLink]="['/gite']" routerLinkActive="active" (click)="navbarCollapsed = true" role="button"><em class="fa fa-fw fa-bed" aria-hidden="true" ></em>LE GÎTE</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/acces']" routerLinkActive="active" (click)="navbarCollapsed = true" role="button">LOCALISATION & ACCÈS</a>
+        <a class="nav-link" [routerLink]="['/acces']" routerLinkActive="active" (click)="navbarCollapsed = true" role="button"><em class="fa fa-fw fa-map-marker" aria-hidden="true" ></em>LOCALISATION & ACCÈS</a>
       </li>
+    </ul>
+    <ul class="navbar-nav ml-xl-5 ml-lg-0 pl-lg-0">
       <li class="nav-item">
         <!-- NOTE: [routerLink]="" allows to show handcursor -->
-        <a class="nav-link" (click)="setSeason();navbarCollapsed = true" [routerLink]="" role="button">saisons</a>
+        <a class="nav-link" (click)="setSeason();navbarCollapsed = true" [routerLink]="" role="button" *ngIf='isSeasonChoosen'><em class="fa fa-fw fa-leaf" aria-hidden="true" *ngIf='!isWinter'></em><em class="fa fa-fw fa-snowflake-o" aria-hidden="true" *ngIf='isWinter'></em>SAISON</a>
       </li>
       <li class="nav-item">
         <ngbd-modal2 (click)="navbarCollapsed = true"></ngbd-modal2>

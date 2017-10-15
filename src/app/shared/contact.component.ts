@@ -22,7 +22,7 @@ export class NgbdModal1 {
 @Component({
   selector: 'ngbd-modal2',
   template: `
-  <a class="nav-link" (click)='open()' role="button" [routerLink]="">CONTACT<em class="fa fa-paper-plane fa-fw" aria-hidden="true"></em></a>
+  <a class="nav-link" (click)='open()' role="button" [routerLink]=""><em class="fa fa-paper-plane fa-fw" aria-hidden="true"></em>CONTACT</a>
   `
   // NOTE: [routerLink]="" allows to show handcursor
 })

@@ -21,6 +21,7 @@ import { GiteComponent } from './gite/gite.component';
 import { SejourCuisineComponent } from './gite/sejour-cuisine/sejour-cuisine.component';
 import { ChbParentsComponent } from './gite/chb-parents/chb-parents.component';
 import { ChbEnfantsComponent } from './gite/chb-enfants/chb-enfants.component';
+import { SdbWcComponent } from './gite/sdb-wc/sdb-wc.component';
 import { PlanComponent } from './gite/plan/plan.component';
 import { ExterieursComponent } from './gite/exterieurs/exterieurs.component';
 
@@ -42,7 +43,7 @@ import { MapModule } from './custom-modules/map/map.module';
       { path: "**", redirectTo: 'home', pathMatch: "full" }//page inexistante
     ])
   ],
-  declarations: [AppComponent, HomeComponent, NgbdModal1, NgbdModal2, GlobalGalleryComponent, InfosPratiquesComponent, TarifsDisposComponent, GiteComponent, AccesComponent, SejourCuisineComponent, ChbParentsComponent, ChbEnfantsComponent, PlanComponent, ExterieursComponent],
+  declarations: [AppComponent, HomeComponent, NgbdModal1, NgbdModal2, GlobalGalleryComponent, InfosPratiquesComponent, TarifsDisposComponent, GiteComponent, AccesComponent, SejourCuisineComponent, ChbParentsComponent, ChbEnfantsComponent, PlanComponent, ExterieursComponent, SdbWcComponent],
   bootstrap: [AppComponent],
   providers: [ModalService,SeasonService]
 })

@@ -1,6 +1,7 @@
 import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 import { NgbModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
 
+import { Subscription } from 'rxjs/Subscription';
 import { Observable } from 'rxjs/Observable'
 
 import { ModalService } from './shared/modal.service';
@@ -17,6 +18,10 @@ import { Season } from './shared/seasons/season';
 
 export class AppComponent implements OnInit {
 
+  subscription: Subscription;
+  isWinter: boolean;
+  isSeasonChoosen :boolean = false;
+
   navbarCollapsed = true;
 
   //subscription to display the contact modal
@@ -25,6 +30,12 @@ export class AppComponent implements OnInit {
 
     modalService.subscription.subscribe(() => {
       this.ngbModal.open(this.modalContent);
+    });
+
+    // subscribe to seasons Changes @nav leaf vs snowfake
+    this.subscription = this.seasonService.getMessage().subscribe(message => {
+      this.isWinter = message.isWinter_;
+      if (this.isSeasonChoosen == false ) this.isSeasonChoosen = true;
     });
 
   }
@@ -46,7 +57,6 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.initiateTimer();// = workaround NOTE: Angular's limitation --> see https://github.com/ng-bootstrap/ng-bootstrap/issues/1604 so use of timer
     //this.setSeason();
-
   }
 
   timer = Observable.create(0, 1000);
@@ -56,6 +66,11 @@ export class AppComponent implements OnInit {
     }
     this.timer = setTimeout(this.setSeason.bind(this), 1 * 1 * 1);
     // TODO: check kill timer
+  }
+
+  ngOnDestroy() {
+    // unsubscribe to ensure no memory leaks
+    this.subscription.unsubscribe();
   }
 
 }

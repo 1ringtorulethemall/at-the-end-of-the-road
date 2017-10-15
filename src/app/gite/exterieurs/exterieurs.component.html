@@ -6,43 +6,11 @@
     </p>
     <div class="divider"></div>
     <div class="row">
-      <div class="col-md-6 col-lg-4 col-gallery">
-        <img class="img-fluid rounded-corners" src="assets/images/gite/exterieurs/SAM_3033-1024x768.jpg">
-        <h4 class="mt-4">La rambarde</h4>
-        <p>
-          Le gîte est au premier étage. Au dessous, la cave permet de ranger ses skis ou ses vélos.
-        </p>
-        </div>
-      <div class="col-md-6 col-lg-4 col-gallery">
-        <img class="img-fluid rounded-corners" src="assets/images/gite/exterieurs/SAM_30431-1024x768.jpg">
-        <h4 class="mt-4">Le jardin</h4>
-        <p>
-          Le gîte dispose d'un petit jardin avec barbecue, table d'extérieur et parasol.
-        </p>
-            </div>
-      <div class="col-md-6 col-lg-4 col-gallery">
-        <img class="img-fluid rounded-corners" src="assets/images/gite/exterieurs/SAM_3039-1024x768.jpg">
-        <h4 class="mt-4">Vue du jardin depuis le parking</h4>
-        <p>
-          Au fond, notre jardin.
-        </p>
-
-      </div>
-      <div class="col-md-6 col-lg-4 col-gallery">
-        <img class="img-fluid rounded-corners" src="assets/images/gite/exterieurs/SAM_3044-1024x768.jpg">
-        <h4 class="mt-4">Le parking</h4>
-        <p>
-          La porte vitrée donne accès à la grande rambarde extérieure orientée sud
-        </p>
-
-      </div>
-      <div class="col-md-6 col-lg-4 col-gallery">
-        <img class="img-fluid rounded-corners" src="assets/images/gite/exterieurs/SAM_3029-1024x768.jpg">
-        <h4 class="mt-4">Le parking</h4>
-        <p>
-          Blabla
-        </p>
-
+      <div class="col-md-6 col-lg-4 col-gallery" *ngFor="let p of pictures; let i = index">
+        <img class="img-fluid rounded-corners" src={{p.img}} *ngIf='!p.imgWinterView ||(p.imgWinterView && !isWinter)'>
+        <img class="img-fluid rounded-corners" src={{p.imgWinterView}} *ngIf='p.imgWinterView && isWinter'>
+        <h4 class="mt-4">{{p.title}}</h4>
+        <p *ngIf="p.comment">{{p.comment}}</p>
       </div>
     </div>
   </div>

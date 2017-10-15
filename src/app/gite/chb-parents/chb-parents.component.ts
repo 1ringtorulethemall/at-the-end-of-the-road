@@ -37,7 +37,6 @@ export class ChbParentsComponent implements OnInit, OnDestroy {
   pictures: picture[] = [
     {
       img: "assets/images/gite/chambre-parents/05260017.jpg",
-      // TODO: window + door
       w_imgSummerView: 'assets/images/gite/chambre-parents/f-chb-parents-ete.jpg',
       w_imgWinterView: 'assets/images/gite/chambre-parents/f-chb-parents-hiver.jpg',
       outsideViewEnabled: false,
@@ -45,13 +44,15 @@ export class ChbParentsComponent implements OnInit, OnDestroy {
       comment: 'Nous pouvons fournir le linge de lit sur demande',
     },
     {
-      img: "assets/images/gite/chambre-parents/05260017-2.jpg",
+      img: "assets/images/gite/chambre-parents/dsc_6206.jpg",
+      w_imgSummerView: 'assets/images/gite/chambre-parents/f-chb-parents-ete.jpg',
+      w_imgWinterView: 'assets/images/gite/chambre-parents/f-chb-parents-hiver.jpg',
       outsideViewEnabled: false,
       title: 'Blabla bla',
       comment: 'Blabla bla',
     },
     {
-      img: "assets/images/gite/chambre-parents/05260017-3.jpg",
+      img: "assets/images/gite/chambre-parents/dsc_6205.jpg",
       outsideViewEnabled: false,
       title: 'Blabla bla',
       comment: 'Blabla bla',

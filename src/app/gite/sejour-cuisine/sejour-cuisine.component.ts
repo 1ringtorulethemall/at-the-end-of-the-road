@@ -40,10 +40,7 @@ export class SejourCuisineComponent implements OnInit, OnDestroy {
 
   pictures: picture[] = [
     {
-      img: "assets/images/gite/sejour-cuisine/05260031.jpg",
-      // TODO: window + door
-    //  w_imgSummerView: 'assets/images/gite/sejour-cuisine/f-entree-ete.jpg',
-    //  w_imgWinterView: 'assets/images/gite/sejour-cuisine/f-entree-hiver.jpg',
+      img: "assets/images/gite/sejour-cuisine/dsc_6200.jpg",
       d_imgSummerView: 'assets/images/gite/sejour-cuisine/pf-entree-ete.jpg',
       d_imgWinterView: 'assets/images/gite/sejour-cuisine/pf-entree-hiver.jpg',
       outsideViewEnabled: false,
@@ -51,42 +48,42 @@ export class SejourCuisineComponent implements OnInit, OnDestroy {
       comment: 'Une table pour 6 personnes et même plus, ...',
     },
     {
-      img: "assets/images/gite/sejour-cuisine/06120024.jpg",
+      img: "assets/images/gite/sejour-cuisine/dsc_6163.jpg",
       w_imgSummerView: 'assets/images/gite/sejour-cuisine/f-l-salon-ete.jpg',
       w_imgWinterView: 'assets/images/gite/sejour-cuisine/f-l-salon-hiver.jpg',
       outsideViewEnabled: false,
       title: 'Le séjour vu de la cuisine',
-      comment: 'à droite le poële',
+      comment: 'Séjour et cuisine forment un espace de vie très chaleureux',
     },
     {
-      img: "assets/images/gite/sejour-cuisine/05260033.jpg",
+      img: "assets/images/gite/sejour-cuisine/dsc_6186.jpg",
       w_imgSummerView: 'assets/images/gite/sejour-cuisine/f-sm-salon-ete.jpg',
       w_imgWinterView: 'assets/images/gite/sejour-cuisine/f-sm-salon-hiver.jpg',
       outsideViewEnabled: false,
-      title: 'Un grand séjour',
-      comment: 'Un grand séjour',
-    },
-    {
-      img: "assets/images/gite/sejour-cuisine/06120027.jpg",
-      w_imgSummerView: 'assets/images/gite/sejour-cuisine/f-sm-salon-ete.jpg',
-      w_imgWinterView: 'assets/images/gite/sejour-cuisine/f-sm-salon-hiver.jpg',
-      outsideViewEnabled: false,
-      title: 'Le canapé',
+      title: 'Le coin canapé',
       comment: 'Le canapé est convertible en lit 2 personnes 140x200 (couette chaude)',
     },
     {
-      img: "assets/images/gite/sejour-cuisine/06120028.jpg",
+      img: "assets/images/gite/sejour-cuisine/dsc_6193.jpg",
+      d_imgSummerView: 'assets/images/gite/sejour-cuisine/pf-entree-ete.jpg',
+      d_imgWinterView: 'assets/images/gite/sejour-cuisine/pf-entree-hiver.jpg',
+      outsideViewEnabled: false,
+      title: 'Vue depuis le canapé',
+      comment: "En arrière-plan, l'accès aux chambres et le poële pour l'hiver",
+    },
+    {
+      img: "assets/images/gite/sejour-cuisine/dsc_6172.jpg",
+      outsideViewEnabled: false,
+      title: 'La cuisine',
+      comment: 'De nombreux rangements du 18ème siècle sont intégrés dans les murs.',
+    },
+    {
+      img: "assets/images/gite/sejour-cuisine/dsc_6183.jpg",
       w_imgSummerView: 'assets/images/gite/sejour-cuisine/f-l-salon-ete.jpg',
       w_imgWinterView: 'assets/images/gite/sejour-cuisine/f-l-salon-hiver.jpg',
       outsideViewEnabled: false,
-      title: 'Un grand séjour',
-      comment: '  bla bla',
-    },
-    {
-      img: "assets/images/gite/sejour-cuisine/06120025.jpg",
-      outsideViewEnabled: false,
       title: 'La cuisine',
-      comment: 'De nombreux rangements du 18ème siècle sont intégrés dans les murs. ++BTN VERS EQUIPEMENTS CUISINE ou reload compo',
+      comment: "La liste complète des équipements est disponible en page d'accueil",
     }
   ];
 }
