@@ -12,7 +12,8 @@ import { NgbdModal2 } from './shared/contact.component';
 import {SeasonService} from './shared/seasons/season.service'
 
 import { HomeComponent } from './home/home.component';
-import { CarouselModule } from './custom-modules/carousel/carousel.module';
+import { PanoramicComponent } from './home/panoramic/panoramic.component';
+//import { CarouselModule } from './custom-modules/carousel/carousel.module';
 import { GlobalGalleryComponent } from './home/global-gallery/global-gallery.component';
 import { InfosPratiquesComponent } from './home/infos-pratiques/infos-pratiques.component';
 import { TarifsDisposComponent } from './home/tarifs-dispos/tarifs-dispos.component';
@@ -32,7 +33,7 @@ import { MapModule } from './custom-modules/map/map.module';
 @NgModule({
   imports: [
     BrowserModule,
-    CarouselModule,
+  //  CarouselModule,
     MapModule,
     NgbModule.forRoot(), // destination ngbCollapse navbar (ng-bootstrap)
     RouterModule.forRoot([
@@ -43,7 +44,7 @@ import { MapModule } from './custom-modules/map/map.module';
       { path: "**", redirectTo: 'home', pathMatch: "full" }//page inexistante
     ])
   ],
-  declarations: [AppComponent, HomeComponent, NgbdModal1, NgbdModal2, GlobalGalleryComponent, InfosPratiquesComponent, TarifsDisposComponent, GiteComponent, AccesComponent, SejourCuisineComponent, ChbParentsComponent, ChbEnfantsComponent, PlanComponent, ExterieursComponent, SdbWcComponent],
+  declarations: [AppComponent, HomeComponent, NgbdModal1, NgbdModal2, GlobalGalleryComponent, InfosPratiquesComponent, TarifsDisposComponent, GiteComponent, AccesComponent, SejourCuisineComponent, ChbParentsComponent, ChbEnfantsComponent, PlanComponent, ExterieursComponent, SdbWcComponent, PanoramicComponent],
   bootstrap: [AppComponent],
   providers: [ModalService,SeasonService]
 })

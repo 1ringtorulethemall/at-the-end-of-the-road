@@ -1,0 +1,31 @@
+<!--
+<div class="container-fluid panoramic2 img-fluid">
+  <div class="text-center">
+    <h3 class="rounded d-inline-flex p-2">Massif des Bauges - Savoie</h3>
+    <div>
+      <span>Suivez la flèche pour trouver le gîte</span>
+    </div>
+  </div>
+</div>
+-->
+
+<!--
+<div class="jumbotron jumbotron-fluid panoramic2">
+  <div class="container">
+    <h1 class="display-3">Fluid jumbotron</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+</div>
+-->
+<section class="panoramic">
+  <div class="card">
+    <img class="card-img" src="/assets/images/home/pano-ete-w1920.jpg" *ngIf='!isWinter'alt="Card image">
+    <img class="card-img" src="/assets/images/home/pano-hiver-w1920.jpg" *ngIf='isWinter'alt="Card image">
+    <div class="card-img-overlay text-center">
+      <h3 class="rounded d-inline-flex p-2">Massif des Bauges - Savoie</h3>
+      <div class="d-none d-sm-block d-xs-none">
+        <span>Suivez la flèche pour trouver le gîte</span>
+      </div>
+    </div>
+  </div>
+</section>

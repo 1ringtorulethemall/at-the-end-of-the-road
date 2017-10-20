@@ -4,7 +4,7 @@
     <h4 class="modal-title">À quelle saison souhaitez-vous venir ?</h4>
   </div>
   <div class="modal-body season-choice-body">
-    <p>Vous pouvez choisir ici de vertes prairies ou des paysages enneigés</p>
+    <p>Vous pouvez choisir ici de vertes prairies ou des paysages enneigés :</p>
     <button *ngFor="let s of seasons; let i = index" type="button" class="btn btn-lg btn-outline-primary" (click)="c(s.name)"> <em class="fa fa-2x fa-leaf" aria-hidden="true" *ngIf='i==0'></em><em class="fa fa-2x fa-snowflake-o" aria-hidden="true" *ngIf='i==1'></em>{{s.name}}</button>
   </div>
 </ng-template>

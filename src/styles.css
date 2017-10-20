@@ -17,13 +17,18 @@ section {
   border-top: none;
 }
 
-nav, ngb-carousel {
+nav, ngb-carousel, .panoramic {
   border: 20px solid #222;
   border-top: none;
   border-bottom: none;
 }
 .nav-item em{
   padding-right:5px;
+}
+
+/* fix */
+.nav-item .fa-bed{
+  margin-right:4px;
 }
 
 .navbar-brand-custom {
@@ -35,7 +40,7 @@ nav, ngb-carousel {
     border-left: 2px solid #222;
     border-right: 2px solid #222;
   }
-  nav, ngb-carousel {
+  nav, ngb-carousel, .panoramic {
     border-left: 2px solid #222;
     border-right: 2px solid #222;
   }
@@ -233,7 +238,85 @@ p {
 
 
 /*--------------- HOME -----------------------*/
+/* panoramic */
+.panoramic2 {
+  background-image: url(/assets/images/home/pano-ete.jpg);
+  width: 100% \9;
+  /*
+  background: right;
+  height: 400px;
 
+  min-height: 15rem;
+  */
+}
+
+
+.panoramic {
+
+  /*
+  background: right;
+  height: 400px;
+
+  min-height: 15rem;
+  */
+}
+.card{
+  border : 0;
+}
+
+.card-img-overlay {
+  position:absolute;
+  top :50%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+  padding-top: 30%;
+}
+
+.card-img {
+  border-radius: 0;
+}
+
+.panoramic h3 {
+  font-size: 35px;
+  color: #FFF;
+  background-color: rgb(0, 0, 0);
+  /* old browsers */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* recent browsers */
+  margin-bottom: 0;
+}
+
+.panoramic span {
+  font-size: 13px;
+  color: #FFF;
+  background-color: rgb(0, 0, 0);
+  /* old browsers */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* recent browsers */
+}
+
+/* TODO: @include media-breakpoint-down(lg) ne marche pas dans bootstrap beta*/
+
+@media screen and (max-width:1280px) {
+  .card-img-overlay {
+    padding-top: 20%;
+  }
+
+}
+
+@media screen and (max-width:880px) {
+  .panoramic h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .panoramic h3 {
+    font-size: 10px;
+  }
+}
 
 /*carousel*/
 
@@ -475,7 +558,7 @@ p {
 }
 
 .constrain-width {
-  max-width: 45rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
