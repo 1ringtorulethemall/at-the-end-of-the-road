@@ -1,14 +1,10 @@
 <section class="gite-gallery text-center">
   <div class="container-fluid gallery">
-    <h2>Le plan du gîte</h2>
-    <p class="lead">
-      Le gîte est situé au premier étage avec un large balcon extérieur.<br>Au RDC, une cave permet de stocker skis et vélos. Au dessus, un grenier inhabité.
-    </p>
+    <h2>{{datas.title}}</h2>
+    <p class="lead" [innerHTML]="datas.srt"></p>
     <div class="divider"></div>
-    <img class="img-fluid rounded-corners" src="assets/images/gite/plan.jpg">
-    <h4 class="mt-4">75m2 sur un étage</h4>
-    <p>
-      1 grand séjour-cuisine, 2 chambres et un canapé-lit dans le salon, 1 grand balcon extérieur fermé, parking et jardin.
-    </p>
+    <img class="img-fluid rounded-corners" src={{datas.img}}>
+    <h4 class="mt-4">{{datas.txt1}}</h4>
+    <p>{{datas.txt2}}</p>
   </div>
 </section>

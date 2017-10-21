@@ -1,12 +1,10 @@
 <section class="acces localisation text-center">
   <div class="container-fluid">
-    <h2>Accès au gîte</h2>
-    <p class="lead constrain-width">
-      <em class="fa fa-car fa-fw" aria-hidden="true"></em> Depuis la statue de la vierge, 1km sous Bellecombe en Bauges, il faut suivre le panneau Broissieux en restant sur la route goudronnée qui monte ...<br>Après un virage à 90° sur la gauche, le gîte est sur la gauche à 100m.
-    </p>
+    <h2>{{datas.title}}</h2>
+    <p class="lead constrain-width" [innerHTML]="datas.srt"></p>
     <div class="divider">
     </div>
-    <a class="btn btn-outline-secondary" role="button" (click)='toggleMap()'>{{showMap?"Fermer Google maps" :"Ouvrir Google maps"}}</a>
+    <a class="btn btn-outline-secondary" role="button" (click)='toggleMap()'>{{showMap?datas.btnMapF :datas.btnMapO}}</a>
       <div class="row mt-5 no-gutters" *ngIf='!showMap'>
         <div class="col-lg-12 loc-item1">
         </div>

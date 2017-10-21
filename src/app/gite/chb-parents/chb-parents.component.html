@@ -1,9 +1,7 @@
 <section class="gite-gallery text-center">
   <div class="container-fluid gallery">
-    <h2>La chambre parents</h2>
-    <p class="lead">
-      Orientée nord-est et ensoleillée le matin, elle offre une vue sur le roc des Boeufs qui domine le lac d'Annecy et Bellecombe chef-lieu à 1km.
-    </p>
+    <h2>{{datas.title}}</h2>
+    <p class="lead" [innerHTML]="datas.srt"></p>
     <div class="divider"></div>
     <div class="row">
       <div class="col-md-6 col-lg-4 col-gallery mx-auto" *ngFor="let p of pictures;let i = index">
@@ -13,7 +11,7 @@
         <h4 class="mt-4">{{p.title}}</h4>
         <p>{{p.comment}}</p>
         <p>
-          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.w_imgSummerView || p.w_imgWinterView">{{p.outsideViewEnabled?"Fermer la fenêtre":"Ouvrir la fenêtre"}}</a>
+          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.w_imgSummerView || p.w_imgWinterView">{{p.outsideViewEnabled?datas.btnFF:datas.btnOF}}</a>
         </p>
       </div>
     </div>

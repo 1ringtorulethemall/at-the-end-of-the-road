@@ -9,6 +9,8 @@ import { ModalService } from './shared/modal.service';
 import { SeasonService } from './shared/seasons/season.service';
 import { Season } from './shared/seasons/season';
 
+import { TextService } from "./shared/texts/text.service";
+
 @Component({
   moduleId: module.id,
   selector: 'gite-app',
@@ -22,11 +24,14 @@ export class AppComponent implements OnInit {
   isWinter: boolean;
   isSeasonChoosen :boolean = false;
 
+  datas: any;
+  errorMessage: string;
+
   navbarCollapsed = true;
 
   //subscription to display the contact modal
   @ViewChild('contact') modalContent: ElementRef;
-  constructor(private modalService: ModalService, private ngbModal: NgbModal, private seasonService: SeasonService) {
+  constructor(private modalService: ModalService, private ngbModal: NgbModal, private seasonService: SeasonService, private _textService: TextService) {
 
     modalService.subscription.subscribe(() => {
       this.ngbModal.open(this.modalContent);
@@ -57,6 +62,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.initiateTimer();// = workaround NOTE: Angular's limitation --> see https://github.com/ng-bootstrap/ng-bootstrap/issues/1604 so use of timer
     //this.setSeason();
+
+    this.getText();
   }
 
   timer = Observable.create(0, 1000);
@@ -66,6 +73,13 @@ export class AppComponent implements OnInit {
     }
     this.timer = setTimeout(this.setSeason.bind(this), 1 * 1 * 1);
     // TODO: check kill timer
+  }
+
+  getText() {
+    this._textService.getText("main").subscribe(datas => {
+      this.datas = datas;
+    }
+      , error => this.errorMessage = <any>error);
   }
 
   ngOnDestroy() {

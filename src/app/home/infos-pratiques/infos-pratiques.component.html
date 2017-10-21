@@ -1,53 +1,48 @@
 <section class="resume text-center">
   <div class="container-fluid ">
-    <div class="row">
-    <h2>Informations pratiques</h2>
+    <h2>{{datas.title}}</h2>
     <p class="lead">
-      Le bouton en bas de paragraphe vous donne accès à la liste complète des équipements du gîte.
+      {{datas.baseline}}
     </p>
     <div class="divider"></div>
-    </div>
     <div class="row">
-      <div class="col-md-4 col-sm-12">
-        <h1>6</h1>
-        <h4>personnes</h4>
-        <p>c'est notre capacité d'accueil maximum</p>
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <h1>2</h1>
-        <h4>chambres agréables</h4>
-        <p>Une chambre 160x200 - Une chambre 3 lits 90x200<br>Un canapé lit 2 personnes dans le séjour</p>
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <h1>2</h1>
-        <h4>étoiles</h4>
-        <p>attribuées par l'office de tourisme</p>
+      <div class="col-md-4 col-sm-12" *ngFor="let n of datas.nfos?.level1">
+        <h1>{{n.number}}</h1>
+        <h4>{{n.srt}}</h4>
+        <p [innerHTML]="n.txt"></p>
+        <!-- NOTE:  Problème <br> pas pris en compte
+        This is frowned upon though due to the evident security flaws
+        or see https://angular.io/guide/security#sanitization-and-security-contexts
+        <p>{{n.txt}}</p>
+        vs
+        <p [innerHTML]="n.txt"></p>
+      -->
       </div>
     </div>
     <div class="row">
       <div class="col-md-3 col-sm-4">
         <em class="fa fa-2x fa-wifi" aria-hidden="true"></em>
-        <p>Wifi</p>
+        <p>{{datas.nfos?.level2[0].txt}}</p>
       </div>
       <div class="col-md-2 col-sm-4">
         <em class="fa fa-2x fa-bath" aria-hidden="true"></em>
-        <p>Salle de bain avec baignoire</p>
+        <p>{{datas.nfos?.level2[1].txt}}</p>
       </div>
       <div class="col-md-2 col-sm-4">
         <em class="fa fa-2x fa-child" aria-hidden="true"></em>
-        <p>Matériel bébé</p>
+        <p>{{datas.nfos?.level2[2].txt}}</p>
       </div>
       <div class="col-md-2 col-sm-6">
         <em class="fa fa-2x fa-bed" aria-hidden="true"></em>
-        <p>Linge de lit sur demande</p>
+        <p>{{datas.nfos?.level2[3].txt}}</p>
       </div>
       <div class="col-md-3 col-sm-6">
         <em class="fa fa-2x fa-paw" aria-hidden="true"></em>
-        <p>Animaux acceptés sur accord</p>
+        <p>{{datas.nfos?.level2[4].txt}}</p>
       </div>
     </div>
     <div class="spaced">
-      <a class="btn btn-outline-secondary" role="button" (click)='toggleList()'>{{showList?"Masquer la liste complète" :"Afficher tous les équipements"}}</a>
+      <a class="btn btn-outline-secondary" role="button" (click)='toggleList()'>{{showList?datas.btnOn:datas.btnOff}}</a>
     </div>
   </div>
   <!-- affichage optionnel - Liste complète des équipements -->
@@ -57,62 +52,40 @@
         <div class="col-sm-12 col-md-4 col-gallery">
           <div class="box">
             <img class="img-fluid rounded-corners" src="assets/images/home/equipments/cuisine.jpg">
-            <h5 class="mt-4 ml-4 mr-4">Cuisine</h5>
-            <p class="ml-4 mr-4">
-              - Gazinière 4 feux et four à gaz<br> - Four micro onde<br> - Machine à café et bouilloire électrique<br> - Grille pain<br> - Grand frigo 180L et petit congélateur 20L<br>
-            </p>
-            <p class="emphasis ml-4 mr-4">Service et couverts :</p>
-            <p class="ml-4 mr-4">
-              12 assiettes<br>
-            </p>
-            <p class="emphasis ml-4 mr-4">Plats et ustensiles :</p>
-            <p class="ml-4 mr-4">
-              Cocotte-minute
-            </p>
-            <p class="emphasis ml-4 mr-4">Fondue et raclette :</p>
-            <p class="ml-4 mr-4">
-              Caquelon, piques et plaque chauffante + l’adresse de la fromagerie <em class="fa fa-smile-o" aria-hidden="true"></em><br> Prêt du matériel à raclette sur demande
-            </p>
+            <h5 class="mt-4 ml-4 mr-4">{{datas.cuisineList?.title}}</h5>
+            <p class="ml-4 mr-4" [innerHTML]="datas.cuisineList?.text1"></p>
+            <p class="emphasis ml-4 mr-4">{{datas.cuisineList?.emph2}}</p>
+            <p class="ml-4 mr-4" [innerHTML]="datas.cuisineList?.text2"></p>
+            <p class="emphasis ml-4 mr-4" >{{datas.cuisineList?.emph3}}</p>
+            <p class="ml-4 mr-4" [innerHTML]="datas.cuisineList?.text3"></p>
+            <p class="emphasis ml-4 mr-4">{{datas.cuisineList?.emph4}}</p>
+            <p class="ml-4 mr-4" [innerHTML]="datas.cuisineList?.text4"></p>
           </div>
         </div>
         <div class="col-sm-12 col-md-4 col-gallery">
           <div class="box">
             <img class="img-fluid rounded-corners" src="assets/images/home/equipments/literie.jpg">
-            <h5 class="mt-4 ml-4 mr-4">Literie</h5>
-            <p class="emphasis ml-4 mr-4">Dans la chambre parents :</p>
-            <p class="ml-4 mr-4">
-              - 1 grand lit double 160x200cm avec sa couette chaude 200x200cm
-            </p>
-            <p class="emphasis ml-4 mr-4">Dans la chambre enfants :</p>
-            <p class="ml-4 mr-4">
-              - 2 lits simples superposés 97×210 cm avec couettes chaudes 90×200cm.<br> - Lit tiroir 97×200cm avec couettes chaudes 90×200cm.(Ce 3ème couchage permet de faire dormir 3 enfants dans la même chambre en libérant le séjour)
-            </p>
-            <p class="emphasis ml-4 mr-4">Dans le séjour :</p>
-            <p class="ml-4 mr-4">
-              - 1 canapé lit double 140×200 avec couette chaude 160x200cm.
-            </p>
-            <p class="emphasis ml-4 mr-4">Lit parapluie graco</p>
+            <h5 class="mt-4 ml-4 mr-4">{{datas.literieList?.title}}</h5>
+            <p class="emphasis ml-4 mr-4">{{datas.literieList?.emph1}}</p>
+            <p class="ml-4 mr-4" [innerHTML]="datas.literieList?.text1"></p>
+            <p class="emphasis ml-4 mr-4">{{datas.literieList?.emph2}}</p>
+            <p class="ml-4 mr-4" [innerHTML]="datas.literieList?.text2"></p>
+            <p class="emphasis ml-4 mr-4">{{datas.literieList?.emph3}}</p>
+            <p class="ml-4 mr-4" [innerHTML]="datas.literieList?.text3"></p>
+            <p class="emphasis ml-4 mr-4">{{datas.literieList?.emph4}}</p>
           </div>
         </div>
         <div class="col-sm-12 col-md-4 col-gallery">
           <div class="box">
             <img class="img-fluid rounded-corners" src="assets/images/home/equipments/cuisine.jpg">
-            <h5 class="mt-4 ml-4 mr-4">Divers</h5>
-            <p class="ml-4 mr-4">
-              - Machine à laver le linge et étendoir<br> - Aspirateur efficace avec sacs de rechange, balais, serpillères ...
-            </p>
-            <p class="emphasis ml-4 mr-4">Salon de jardin :</p>
-            <p class="ml-4 mr-4">
-              - table d'extérieur, 6 chaises et un parasol<br> - barbecue
-            </p>
-            <p class="emphasis ml-4 mr-4">Matériel bébé :</p>
-            <p class="ml-4 mr-4">
-              Lit parapluie Graco, siège bébé, mousse à langer
-            </p>
-            <p class="emphasis ml-4 mr-4">Internet et TV :</p>
-            <p class="ml-4 mr-4">
-              - Connexion wifi<br> - Le gîte n'a pas la télévision mais dispose d'un fond de livres et de bds.
-            </p>
+            <h5 class="mt-4 ml-4 mr-4">{{datas.diversList?.title}}</h5>
+            <p class="ml-4 mr-4" [innerHTML]="datas.diversList?.text1"></p>
+            <p class="emphasis ml-4 mr-4">{{datas.diversList?.emph2}}</p>
+            <p class="ml-4 mr-4" [innerHTML]="datas.diversList?.text2"></p>
+            <p class="emphasis ml-4 mr-4">{{datas.diversList?.emph3}}</p>
+            <p class="ml-4 mr-4" [innerHTML]="datas.diversList?.text3"></p>
+            <p class="emphasis ml-4 mr-4">{{datas.diversList?.emph4}}</p>
+            <p class="ml-4 mr-4" [innerHTML]="datas.diversList?.text4"></p>
           </div>
         </div>
 

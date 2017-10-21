@@ -493,11 +493,16 @@ p {
   margin-bottom: .5rem;
 }
 
-.dates-tarifs .col-feature p {
+.dates-tarifs .col-feature ul {
+  padding: 0px;
+}
+
+.dates-tarifs .col-feature li {
   color: #a0a0a0;
   font-size: .9rem;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.15;
+  list-style-type:none;
 }
 
 .dates-tarifs .col-feature .rounded-circle {

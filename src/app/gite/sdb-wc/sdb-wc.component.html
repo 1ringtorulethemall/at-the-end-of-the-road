@@ -1,9 +1,7 @@
 <section class="gite-gallery text-center">
   <div class="container-fluid gallery">
-    <h2>La salle de bain et les toilettes</h2>
-    <p class="lead">
-      La salle de bain est séparée des toilettes et elle est équipée d'une baignoire.
-    </p>
+    <h2>{{datas.title}}</h2>
+    <p class="lead" [innerHTML]="datas.srt"></p>
     <div class="divider"></div>
     <div class="row">
       <div class="col-md-6 col-lg-4 col-gallery mx-auto" *ngFor="let p of pictures;let i = index">

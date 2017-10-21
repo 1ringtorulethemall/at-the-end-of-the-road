@@ -3,6 +3,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 import { SeasonService } from '../../shared/seasons/season.service';
 
+import { TextService } from "../../shared/texts/text.service";
 
 @Component({
   selector: 'sejour-cuisine',
@@ -11,16 +12,31 @@ import { SeasonService } from '../../shared/seasons/season.service';
 
 export class SejourCuisineComponent implements OnInit, OnDestroy {
 
-
-
   subscription: Subscription;
   isWinter: boolean;
 
-  constructor(private seasonService: SeasonService) {
+  datas: any = ""; // no initialization = error
+  pictures: picture[];
+  errorMessage: string;
+
+  constructor(private seasonService: SeasonService, private _textService: TextService) {
     // subscribe to seasons Changes
     this.subscription = this.seasonService.getMessage().subscribe(message => {
     this.isWinter= message.isWinter_;
     });
+  }
+
+  ngOnInit(): void {
+    this.isWinter = this.seasonService.isWinter();
+    this.getText();
+  }
+
+  getText() {
+    this._textService.getText("sjGallery").subscribe(datas => {
+      this.datas = datas;
+      this.pictures = datas.pictures;
+    }
+      , error => this.errorMessage = <any>error);
   }
 
   ngOnDestroy() {
@@ -28,16 +44,11 @@ export class SejourCuisineComponent implements OnInit, OnDestroy {
         this.subscription.unsubscribe();
     }
 
-  ngOnInit(): void {
-    this.isWinter = this.seasonService.isWinter();
-  }
-
-
   //gestion vues fenêtres
   toggleVue(i: number): void {
     this.pictures[i].outsideViewEnabled = !this.pictures[i].outsideViewEnabled
   }
-
+/*local
   pictures: picture[] = [
     {
       img: "assets/images/gite/sejour-cuisine/dsc_6200.jpg",
@@ -86,6 +97,7 @@ export class SejourCuisineComponent implements OnInit, OnDestroy {
       comment: "La liste complète des équipements est disponible en page d'accueil",
     }
   ];
+  */
 }
 
 interface picture {

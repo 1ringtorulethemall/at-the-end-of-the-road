@@ -29,10 +29,14 @@ import { ExterieursComponent } from './gite/exterieurs/exterieurs.component';
 import { AccesComponent } from './acces/acces.component';
 import { MapModule } from './custom-modules/map/map.module';
 
+import {HttpModule} from '@angular/http';
+import {TextService} from './shared/texts/text.service'
+
 
 @NgModule({
   imports: [
     BrowserModule,
+    HttpModule,
   //  CarouselModule,
     MapModule,
     NgbModule.forRoot(), // destination ngbCollapse navbar (ng-bootstrap)
@@ -46,7 +50,7 @@ import { MapModule } from './custom-modules/map/map.module';
   ],
   declarations: [AppComponent, HomeComponent, NgbdModal1, NgbdModal2, GlobalGalleryComponent, InfosPratiquesComponent, TarifsDisposComponent, GiteComponent, AccesComponent, SejourCuisineComponent, ChbParentsComponent, ChbEnfantsComponent, PlanComponent, ExterieursComponent, SdbWcComponent, PanoramicComponent],
   bootstrap: [AppComponent],
-  providers: [ModalService,SeasonService]
+  providers: [ModalService,SeasonService,TextService]
 })
 
 export class AppModule {

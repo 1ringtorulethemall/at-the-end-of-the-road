@@ -1,0 +1,398 @@
+{
+  "MAIN": "",
+  "main": {
+    "appTitle": "Le gîte du bout de la route",
+    "nav": [{
+        "item": "Accueil"
+      },
+      {
+        "item": "Le gîte"
+      },
+      {
+        "item": "Localisation & accès"
+      },
+      {
+        "item": "Saison"
+      },
+      {
+        "item": "Contact"
+      }
+    ],
+    "modalSeason": {
+      "title": "À quelle saison souhaitez-vous venir ?",
+      "baseline": "Vous pouvez choisir ici de vertes prairies ou des paysages enneigés :",
+      "service": [{
+          "name": "Été"
+        },
+        {
+          "name": "Hiver"
+        }
+      ]
+    },
+    "modalContact": {
+      "title": "Pour nous contacter",
+      "txt": "Le gîte du bout de route<br> Broissieux - 73340 BELLECOMBE EN BAUGES:",
+      "tel1": "04 79 63 38 06",
+      "tel2": "06 75 09 94 59",
+      "mail": "<a href='mailto:contact@auboutdelaroute.com?subject=Contact depuis auboutdelaroute.com'><em class='fa fa-2x fa-envelope-o' aria-hidden='true'></em>contact@auboutdelaroute.com</a>"
+
+    }
+  },
+  "HOME-----------------": "",
+  "panoramic": {
+    "title": "Massif des Bauges - Savoie",
+    "srt": "Suivez la flèche pour trouver le gîte"
+  },
+  "globalGallery": {
+    "title": "Bienvenue !",
+    "srt": "Le gîte du bout de la route est une maison typique savoyarde de pierre et de bois. Nous sommes situés à Bellecombe, dans un hameau de moyenne montagne offrant une très belle vue sur le massif, au cœur du parc naturel des Bauges, entre Annecy et Chambéry.<br> En plus du ski en hiver et des randos en été, de nombreuses autres activités sont possibles et nous serons ravis de vous faire partager nos coups de coeur !",
+    "btnVoirPlus": "Voir plus d'images",
+    "pictures": [{
+        "img": "assets/images/home/gallery/exterieurs.jpg"
+      },
+      {
+        "img": "assets/images/home/gallery/sejour2.jpg"
+      },
+      {
+        "img": "assets/images/home/gallery/sejour3.jpg"
+      },
+      {
+        "img": "assets/images/home/gallery/sejour1.jpg"
+      },
+      {
+        "img": "assets/images/home/gallery/cuisine.jpg"
+      },
+      {
+        "img": "assets/images/home/gallery/chb-parents.jpg"
+      },
+      {
+        "img": "assets/images/home/gallery/chb-enfants.jpg"
+      },
+      {
+        "img": "assets/images/home/gallery/vue-ete.jpg",
+        "imgWinterView": "assets/images/home/gallery/vue-hiver.jpg"
+      }
+    ]
+  },
+  "nfosPratiques": {
+    "title": "Informations pratiques",
+    "baseline": "Le bouton en bas de paragraphe vous donne accès à la liste complète des équipements du gîte. ",
+    "nfos": {
+      "level1": [{
+          "number": "6",
+          "srt": "personnes",
+          "txt": "c'est notre capacité d'accueil maximum"
+        },
+        {
+          "number": "2",
+          "srt": "chambres agréables",
+          "txt": "Une chambre 160x200 - Une chambre 3 lits 90x200 <br> Un canapé lit 2 personnes dans le séjour"
+        },
+        {
+          "number": "2",
+          "srt": "étoiles",
+          "txt": "attribuées par l'office de tourisme"
+        }
+      ],
+      "level2": [{
+          "txt": "Wifi"
+        },
+        {
+          "txt": "Salle de bain avec baignoire"
+        },
+        {
+          "txt": "Matériel bébé"
+        },
+        {
+          "txt": "Linge de lit sur demande"
+        },
+        {
+          "txt": "Animaux acceptés sur accord"
+        }
+      ]
+    },
+    "btnOff": "Afficher tous les équipements",
+    "btnOn": "Masquer la liste complète",
+    "cuisineList": {
+      "title": "Cuisine",
+      "text1": "- Gazinière 4 feux et four à gaz<br> - Four micro onde<br> - Machine à café et bouilloire électrique<br> - Grille pain<br> - Grand frigo 180L et petit congélateur 20L<br>",
+      "emph2": "Service et couverts :",
+      "text2": "12 assiettes",
+      "emph3": "Plats et ustensiles :",
+      "text3": "Cocotte-minute",
+      "emph4": "Fondue et raclette :",
+      "text4": "Caquelon, piques et plaque chauffante + l’adresse de la fromagerie <em class='fa fa-smile-o' aria-hidden='true'></em><br> Prêt du matériel à raclette sur demande"
+    },
+    "literieList": {
+      "title": "Literie",
+      "emph1": "Dans la chambre parents :",
+      "text1": "- 1 grand lit double 160x200cm avec sa couette chaude 200x200cm",
+      "emph2": "Dans la chambre enfants :",
+      "text2": "- 2 lits simples superposés 97×210 cm avec couettes chaudes 90×200cm.<br> - Lit tiroir 97×200cm avec couettes chaudes 90×200cm.(Ce 3ème couchage permet de faire dormir 3 enfants dans la même chambre en libérant le séjour)",
+      "emph3": "Dans le séjour :",
+      "text3": "- 1 canapé lit double 140×200 avec couette chaude 160x200cm.",
+      "emph4": "Lit parapluie graco"
+    },
+    "diversList": {
+      "title": "Divers",
+      "text1": "- Machine à laver le linge et étendoir<br> - Aspirateur efficace avec sacs de rechange, balais, serpillères ...",
+      "emph2": "Salon de jardin :",
+      "text2": "- table d'extérieur, 6 chaises et un parasol<br> - barbecue",
+      "emph3": "Matériel bébé :",
+      "text3": "Lit parapluie Graco, siège bébé, mousse à langer ",
+      "emph4": "Internet et TV :",
+      "text4": "- Connexion wifi<br> - Le gîte n'a pas la télévision mais dispose d'un fond de livres et de bds."
+    }
+  },
+  "tarifsDispos": {
+    "title": "Tarifs & disponibilités",
+    "baseline": "(Hors vacances scolaires, les jours d'arrivée et de départ sont flexibles. Nous louons du samedi au samedi uniquement pendant les vacances scolaires)",
+    "pricing": {
+      "pList": [{
+          "p": "semaine vacances scolaires : 370€"
+        },
+        {
+          "p": "semaine hors vacances scolaires : 280€"
+        },
+        {
+          "p": "week-end : 150€"
+        }
+      ],
+      "text1": "À cela s'ajoutent votre consommation électrique ainsi qu'une taxe de séjour de 0,90€ par adulte. Nous proposons le linge de lit en option au tarif de 5€"
+    },
+    "availability": {
+      "text": "Le gîte est libre sauf"
+    },
+    "contactBtn": "Nous contacter pour réserver"
+  },
+  "GITE---------": "",
+  "sjGallery": {
+    "title": "Le séjour et la cuisine",
+    "srt": "Composé d’un large espace cuisine et d’un salon spacieux, le séjour est la plus grande pièce du gîte : Il est équipé d'un canapé-lit 2 personnes en appoint et d'un poële à bois. Le matin et le soir, la lumière est traversante du Roc des Boeufs au Mont Colombier.",
+    "pictures": [{
+        "img": "assets/images/gite/sejour-cuisine/dsc_6200.jpg",
+        "d_imgSummerView": "assets/images/gite/sejour-cuisine/pf-entree-ete.jpg",
+        "d_imgWinterView": "assets/images/gite/sejour-cuisine/pf-entree-hiver.jpg",
+        "outsideViewEnabled": false,
+        "title": "La cuisine vue du séjour",
+        "comment": "Une table pour 6 personnes et même plus, ..."
+      },
+      {
+        "img": "assets/images/gite/sejour-cuisine/dsc_6163.jpg",
+        "w_imgSummerView": "assets/images/gite/sejour-cuisine/f-l-salon-ete.jpg",
+        "w_imgWinterView": "assets/images/gite/sejour-cuisine/f-l-salon-hiver.jpg",
+        "outsideViewEnabled": false,
+        "title": "Le séjour vu de la cuisine",
+        "comment": "Séjour et cuisine forment un espace de vie très chaleureux"
+      },
+      {
+        "img": "assets/images/gite/sejour-cuisine/dsc_6186.jpg",
+        "w_imgSummerView": "assets/images/gite/sejour-cuisine/f-sm-salon-ete.jpg",
+        "w_imgWinterView": "assets/images/gite/sejour-cuisine/f-sm-salon-hiver.jpg",
+        "outsideViewEnabled": false,
+        "title": "Le coin canapé",
+        "comment": "Le canapé est convertible en lit 2 personnes 140x200 (couette chaude)"
+      },
+      {
+        "img": "assets/images/gite/sejour-cuisine/dsc_6193.jpg",
+        "d_imgSummerView": "assets/images/gite/sejour-cuisine/pf-entree-ete.jpg",
+        "d_imgWinterView": "assets/images/gite/sejour-cuisine/pf-entree-hiver.jpg",
+        "outsideViewEnabled": false,
+        "title": "Vue depuis le canapé",
+        "comment": "En arrière-plan, l'accès aux chambres et le poële pour l'hiver"
+      },
+      {
+        "img": "assets/images/gite/sejour-cuisine/dsc_6172.jpg",
+        "outsideViewEnabled": false,
+        "title": "La cuisine",
+        "comment": "De nombreux rangements du 18ème siècle sont intégrés dans les murs."
+      },
+      {
+        "img": "assets/images/gite/sejour-cuisine/dsc_6183.jpg",
+        "w_imgSummerView": "assets/images/gite/sejour-cuisine/f-l-salon-ete.jpg",
+        "w_imgWinterView": "assets/images/gite/sejour-cuisine/f-l-salon-hiver.jpg",
+        "outsideViewEnabled": false,
+        "title": "La cuisine",
+        "comment": "La liste complète des équipements est disponible en page d'accueil"
+      }
+    ],
+    "btnOF": "Ouvrir la fenêtre",
+    "btnFF": "Fermer la fenêtre",
+    "btnOP": "Ouvrir la porte",
+    "btnFP": "Fermer la porte"
+
+  },
+  "chbParGallery": {
+    "title": "La chambre parents",
+    "srt": "Orientée nord-est et ensoleillée le matin, elle offre une vue sur le roc des Boeufs qui domine le lac d'Annecy et Bellecombe chef-lieu à 1km.",
+    "pictures": [{
+        "img": "assets/images/gite/chambre-parents/05260017.jpg",
+        "w_imgSummerView": "assets/images/gite/chambre-parents/f-chb-parents-ete.jpg",
+        "w_imgWinterView": "assets/images/gite/chambre-parents/f-chb-parents-hiver.jpg",
+        "outsideViewEnabled": false,
+        "title": "Un grand lit double 160x200",
+        "comment": "Nous pouvons fournir le linge de lit sur demande"
+      },
+      {
+        "img": "assets/images/gite/chambre-parents/dsc_6206.jpg",
+        "w_imgSummerView": "assets/images/gite/chambre-parents/f-chb-parents-ete.jpg",
+        "w_imgWinterView": "assets/images/gite/chambre-parents/f-chb-parents-hiver.jpg",
+        "outsideViewEnabled": false,
+        "title": "Blabla bla",
+        "comment": "Blabla bla"
+      },
+      {
+        "img": "assets/images/gite/chambre-parents/dsc_6205.jpg",
+        "outsideViewEnabled": false,
+        "title": "Blabla bla",
+        "comment": "Blabla bla"
+      }
+    ],
+    "btnOF": "Ouvrir la fenêtre",
+    "btnFF": "Fermer la fenêtre"
+  },
+  "chbEnfGallery": {
+    "title": "La chambre enfants",
+    "srt": "Orientée sud, elle offre une vue sur le Colombier et la vallée qui donne sur les pistes de ski de Margeriaz ou des Aillons.<br />La chambre enfants est équipée de 3 couchages.",
+    "pictures": [{
+        "img": "assets/images/gite/chambre-enfants/dsc_6218.jpg",
+        "outsideViewEnabled": false,
+        "title": "2 couchages superposés 90x200 et un lit tiroir optionnel",
+        "comment": "Nous pouvons fournir le linge de lit sur demande"
+      },
+      {
+        "img": "assets/images/gite/chambre-enfants/dsc_6222.jpg",
+        "d_imgSummerView": "assets/images/gite/chambre-enfants/f-chb-enfants-ete.jpg",
+        "d_imgWinterView": "assets/images/gite/chambre-enfants/f-chb-enfants-hiver.jpg",
+        "outsideViewEnabled": false,
+        "title": "Accès au balcon",
+        "comment": ""
+      },
+      {
+        "img": "assets/images/gite/chambre-enfants/dsc_6212.jpg",
+        "outsideViewEnabled": false,
+        "title": "Bds, livres de poches et jeux de société",
+        "comment": ""
+      },
+      {
+        "img": "assets/images/gite/chambre-enfants/05260026.jpg",
+        "outsideViewEnabled": false,
+        "title": "De nombreux rangements ...",
+        "comment": "... sont prévus dans les murs intérieurs. On y trouve même de vieilles écritures à la sanguine !"
+      },
+      {
+        "img": "assets/images/gite/chambre-enfants/dsc_6216.jpg",
+        "d_imgSummerView": "assets/images/gite/chambre-enfants/f-chb-enfants-ete.jpg",
+        "d_imgWinterView": "assets/images/gite/chambre-enfants/f-chb-enfants-hiver.jpg",
+        "outsideViewEnabled": false,
+        "title": "Plafond d'époque",
+        "comment": "Mais isolé du froid par le grenier (comme tout le gîte)"
+      },
+      {
+        "img": "assets/images/gite/chambre-enfants/dsc_6223.jpg",
+        "outsideViewEnabled": false,
+        "title": "Au fond, la chambre parents",
+        "comment": "À droite, les toilettes et la salle de bain"
+      }
+    ],
+    "btnOP": "Ouvrir la porte",
+    "btnFP": "Fermer la porte"
+  },
+  "sdbGallery": {
+    "title": "La salle de bain et les toilettes",
+    "srt": "La salle de bain est séparée des toilettes et elle est équipée d'une baignoire.",
+    "pictures": [{
+        "img": "assets/images/gite/sdb-wc/dsc_6226.jpg",
+        "title": "Salle de bain et toilettes",
+        "comment": "Elles sont situées entre les deux chambres"
+      },
+      {
+        "img": "assets/images/gite/sdb-wc/dsc_6231.jpg",
+        "title": "La salle de bain",
+        "comment": "Elle est équipée d'une grande baignoire"
+      },
+      {
+        "img": "assets/images/gite/sdb-wc/dsc_6230.jpg",
+        "title": "La salle de bain",
+        "comment": "On y trouve aussi le lave-linge, de très nombreux porte-vêtements et un chauffage sèche-serviettes"
+      }
+    ]
+  },
+  "extGallery": {
+    "title": "Le jardin, la rambarde et le parking",
+    "srt": "bla bla",
+    "pictures": [{
+        "img": "assets/images/gite/exterieurs/SAM_3033-1024x768.jpg",
+        "title": "Vue générale du gîte",
+        "comment": "Le gîte est au premier étage. Au dessous, la cave permet de ranger ses skis ou ses vélos."
+      },
+      {
+        "img": "assets/images/gite/exterieurs/SAM_30431-1024x768.jpg",
+        "title": "Le jardin",
+        "comment": "Le gîte dispose d'un petit jardin avec barbecue, table d'extérieur et parasol."
+      },
+      {
+        "img": "assets/images/gite/exterieurs/SAM_3039-1024x768.jpg",
+        "title": "Vue du jardin depuis le parking",
+        "comment": "Au fond, notre jardin."
+      },
+      {
+        "img": "assets/images/gite/exterieurs/dsc_6234.jpg",
+        "title": "Le balcon",
+        "comment": "Le large balcon orienté sud est très agréable en toute saison"
+      },
+      {
+        "img": "assets/images/gite/exterieurs/SAM_3044-1024x768.jpg",
+        "title": "Le parking"
+      },
+      {
+        "img": "assets/images/gite/exterieurs/SAM_3029-1024x768.jpg",
+        "imgWinterView": "assets/images/gite/exterieurs/DSC_0670.jpg",
+        "title": "Le parking"
+      }
+    ]
+  },
+  "plan": {
+    "title": "Le plan du gîte",
+    "srt": "Le gîte est situé au premier étage avec un large balcon extérieur.<br>Au RDC, une cave permet de stocker skis et vélos. Au dessus, un grenier inhabité.",
+    "img": "assets/images/gite/plan.jpg",
+    "txt1": "75m2 sur un étage",
+    "txt2": "1 grand séjour-cuisine, 2 chambres et un canapé-lit dans le salon, 1 grand balcon extérieur fermé, parking et jardin."
+
+  },
+  "LOC_ACCES---------": "",
+  "acces": {
+    "title": "Accès au gîte",
+    "srt": "<em class='fa fa-car fa-fw' aria-hidden='true'></em>Depuis la statue de la vierge, 1km sous Bellecombe en Bauges, il faut suivre le panneau Broissieux en restant sur la route goudronnée qui monte ...<br>Après un virage à 90° sur la gauche, le gîte est sur la gauche à 100m.",
+    "btnMapO": "Ouvrir Google maps",
+    "btnMapF": "Fermer Google maps"
+  },
+  "markersList": [{
+      "lat": 45.738109,
+      "lng": 6.124398,
+      "nfoTitle": "Le gîte du bout de la route",
+      "nfoWindow": "Vous pouvez dézoomer pour afficher les commerces de proximité."
+    },
+    {
+      "lat": 45.738782,
+      "lng": 6.141853,
+      "label": ".",
+      "nfoTitle": "La Halte des Bauges",
+      "nfoWindow": "Boulangerie, patisserie, restaurant, épicerie de proximité et produits locaux... super accueil à 1mn"
+    },
+    {
+      "lat": 45.714118,
+      "lng": 6.105792,
+      "label": ".",
+      "nfoTitle": "Lescheraines",
+      "nfoWindow": "Boulangerie, boucherie, fromagerie, chocolaterie, superette, commerces ... à 5mn"
+    },
+    {
+      "lat": 45.687888,
+      "lng": 6.134614,
+      "label": ".",
+      "nfoTitle": "Le Châtelard",
+      "nfoWindow": "Carrefour contact, essence, boulangerie, pharmacie... à 10mn"
+    }
+  ]
+}

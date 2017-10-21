@@ -1,9 +1,7 @@
 <section class="gite-gallery sc-gallery text-center">
   <div class="container-fluid gallery">
-    <h2>Le séjour et la cuisine</h2>
-    <p class="lead">
-      Composé d’un large espace cuisine et d’un salon spacieux, le séjour est la plus grande pièce du gîte :<br /> Il est équipé d'un canapé-lit 2 personnes en appoint et d'un poële à bois.
-    </p>
+    <h2>{{datas.title}}</h2>
+    <p class="lead"  [innerHTML]="datas.srt"></p>
     <div class="divider"></div>
     <div class="row">
       <div class="col-md-6 col-lg-4 col-gallery" *ngFor="let p of pictures; let i = index">
@@ -15,10 +13,10 @@
         <h4 class="mt-4">{{p.title}}</h4>
         <p>{{p.comment}}</p>
         <p>
-          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.w_imgSummerView || p.w_imgWinterView">{{p.outsideViewEnabled?"Fermer la fenêtre":"Ouvrir la fenêtre"}}</a>
+          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.w_imgSummerView || p.w_imgWinterView">{{p.outsideViewEnabled?datas.btnFF:datas.btnOF}}</a>
         </p>
         <p>
-          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.d_imgSummerView || p.d_imgWinterView">{{p.outsideViewEnabled?"Fermer la porte":"Ouvrir la porte"}}</a>
+          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.d_imgSummerView || p.d_imgWinterView">{{p.outsideViewEnabled?datas.btnFP:datas.btnOP}}</a>
         </p>
       </div>
     </div>

@@ -2,10 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h2> Tarifs & disponibilités</h2>
-        <p class="lead mt-3">
-          (Hors vacances scolaires, les jours d'arrivée et de départ sont flexibles. Nous louons du samedi au samedi uniquement pendant les vacances scolaires)
-        </p>
+        <h2>{{datas.title}}</h2>
+        <p class="lead mt-3">{{datas.baseline}}</p>
         <div class="divider"></div>
       </div>
     </div>
@@ -15,23 +13,22 @@
           <em class="fa fa-2x fa-eur" aria-hidden="true">
           </em>
         </div>
-        <h4>semaine vacances scolaires : 370€</h4>
-        <h4>semaine hors vacances scolaires : 280€</h4>
-        <h4>week-end : 150€</h4>
-        <p>
-          À cela s'ajoutent votre consommation électrique ainsi qu'une taxe de séjour de 0,90€ par adulte. Nous proposons le linge de lit en option au tarif de 5€
-        </p>
+        <!-- NOTE: datas.pricing?.pList ? because pricing undefined (http call is asynchronous)
+      I could use | async pipe too -->
+        <h4 *ngFor="let p of datas.pricing?.pList ">{{p.p}}</h4>
+        <p>{{datas.pricing?.text1}}</p>
       </div>
       <div class="col-md-6 col-feature">
         <div class="rounded-circle justify-center">
           <em class="fa fa-2x fa-calendar" aria-hidden="true">
           </em>
         </div>
-        <h4>Le gîte est libre sauf</h4>
-        <p>
-          du 23 au 30 décembre 2017<br>
-          du 3 au 10 mars 2018
-        </p>
+        <h4>{{datas.availability?.text}}</h4>
+        <ul>
+          <li *ngFor="let a of availability">
+            {{a.rented}}
+          </li>
+        </ul>
       </div>
     </div>
     <div class="col-md-12 text-center">

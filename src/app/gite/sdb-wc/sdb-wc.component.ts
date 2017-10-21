@@ -1,12 +1,32 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+
+import { TextService } from "../../shared/texts/text.service";
 
 @Component({
   selector: 'sdb-wc',
   templateUrl: './sdb-wc.component.html'
 })
-export class SdbWcComponent  {
+export class SdbWcComponent implements OnInit {
 
+  constructor( private _textService: TextService) {}
 
+  datas: any = ""; // no initialization = error
+  pictures: picture[];
+  errorMessage: string;
+
+  ngOnInit(): void {
+    this.getText();
+  }
+
+  getText() {
+    this._textService.getText("sdbGallery").subscribe(datas => {
+      this.datas = datas;
+      this.pictures = datas.pictures;
+    }
+      , error => this.errorMessage = <any>error);
+  }
+
+/*local
   pictures: picture[] = [
     {
       img: "assets/images/gite/sdb-wc/dsc_6226.jpg",
@@ -24,6 +44,7 @@ export class SdbWcComponent  {
       comment: 'On y trouve aussi le lave-linge, de très nombreux porte-vêtements et un chauffage sèche-serviette',
     }
   ]
+  */
 
 }
 

@@ -1,23 +1,24 @@
-import { Injectable } from '@angular/core';
+import { Injectable} from '@angular/core';
 
 import { Subject } from 'rxjs/Subject';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/Observable';
 
 import { Season } from './season';
 
 
 @Injectable()
-export class SeasonService {
+export class SeasonService  {
 
   SEASONS: Season[] = [
-    { name: 'Été', isCurrent: false},
-    { name: 'Hiver', isCurrent: false} // !! winter pos =1
+    { name: 'Été', isCurrent: false }, // no trad
+    { name: 'Hiver', isCurrent: false } // !! winter pos =1
   ]
 
   private subject = new Subject<any>();
   sendMessage(msge: boolean) {
     this.subject.next({ isWinter_: msge });
   }
+
   getMessage(): Observable<any> {
     return this.subject.asObservable();
   }
