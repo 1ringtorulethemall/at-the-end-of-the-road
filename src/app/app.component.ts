@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.initiateTimer();// = workaround NOTE: Angular's limitation --> see https://github.com/ng-bootstrap/ng-bootstrap/issues/1604 so use of timer
+  //  this.initiateTimer();// = workaround NOTE: Angular's limitation --> see https://github.com/ng-bootstrap/ng-bootstrap/issues/1604 so use of timer
     //this.setSeason();
 
     this.getText();

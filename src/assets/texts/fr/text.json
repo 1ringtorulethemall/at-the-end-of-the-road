@@ -9,7 +9,7 @@
         "item": "Le gîte"
       },
       {
-        "item": "Localisation & accès"
+        "item": "Accès"
       },
       {
         "item": "Saison"
@@ -45,7 +45,7 @@
   },
   "globalGallery": {
     "title": "Bienvenue !",
-    "srt": "Le gîte du bout de la route est une maison typique savoyarde de pierre et de bois. Nous sommes situés à Bellecombe, dans un hameau de moyenne montagne offrant une très belle vue sur le massif, au cœur du parc naturel des Bauges, entre Annecy et Chambéry.<br> En plus du ski en hiver et des randos en été, de nombreuses autres activités sont possibles et nous serons ravis de vous faire partager nos coups de coeur !",
+    "srt": "Le gîte du bout de la route est une maison typique savoyarde de pierre et de bois. Nous sommes situés à Bellecombe, dans un hameau de moyenne montagne offrant une très belle vue sur le massif, au cœur du parc naturel des Bauges, entre Annecy et Chambéry. En plus du ski en hiver et des randos en été, de nombreuses autres activités sont possibles et nous serons ravis de vous faire partager nos coups de coeur !",
     "btnVoirPlus": "Voir plus d'images",
     "pictures": [{
         "img": "assets/images/home/gallery/exterieurs.jpg"

@@ -4,13 +4,14 @@
 body {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  background-color: #ffffff;
+  background-color:#222;
   color: #46484a;
 }
 
 section {
   border: 20px solid #222;
   border-bottom: none;
+  background-color: #ffffff;
 }
 
 .sc-gallery, .localisation {
@@ -35,47 +36,26 @@ nav, ngb-carousel, .panoramic {
   font-size: 16px;
 }
 
-@media screen and (max-width:576px) {
-  section {
-    border-left: 2px solid #222;
-    border-right: 2px solid #222;
-  }
-  nav, ngb-carousel, .panoramic {
-    border-left: 2px solid #222;
-    border-right: 2px solid #222;
-  }
-
-}
-@media screen and (max-width:1024px) {
-  .navbar-brand-custom {
-    font-size: 16px;
-  }
-}
-
 a {
   color: #249300;
 }
 
 h1 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 4rem;
   font-weight: 600;
 }
 
 h2 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2.8rem;
   font-weight: 500;
 }
 
 h3 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2rem;
   font-weight: 500;
 }
 
 h4 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -85,7 +65,6 @@ p {
   color: #696b6e;
   font-size: .9rem;
 }
-
 
 /*--------------- UTILS -----------------------*/
 
@@ -215,21 +194,16 @@ p {
 }
 
 .gallery h2 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2.8rem;
-  font-weight: 500;
   color: #46484a;
   margin-bottom: 8px;
 }
 
 .gallery h3 {
   font-size: 1.2rem;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.15;
 }
 
 .gallery h4 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -239,39 +213,14 @@ p {
 
 /*--------------- HOME -----------------------*/
 /* panoramic */
-.panoramic2 {
-  background-image: url(/assets/images/home/pano-ete.jpg);
-  width: 100% \9;
-  /*
-  background: right;
-  height: 400px;
-
-  min-height: 15rem;
-  */
-}
-
-
-.panoramic {
-
-  /*
-  background: right;
-  height: 400px;
-
-  min-height: 15rem;
-  */
-}
 .card{
   border : 0;
 }
 
-.card-img-overlay {
-  position:absolute;
-  top :50%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1.25rem;
-  padding-top: 30%;
+ .card-img-overlay {
+   position:absolute;
+   padding: 0rem;
+   padding-top: 22%;
 }
 
 .card-img {
@@ -295,27 +244,6 @@ p {
   /* old browsers */
   background-color: rgba(0, 0, 0, 0.4);
   /* recent browsers */
-}
-
-/* TODO: @include media-breakpoint-down(lg) ne marche pas dans bootstrap beta*/
-
-@media screen and (max-width:1280px) {
-  .card-img-overlay {
-    padding-top: 20%;
-  }
-
-}
-
-@media screen and (max-width:880px) {
-  .panoramic h3 {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width:576px) {
-  .panoramic h3 {
-    font-size: 10px;
-  }
 }
 
 /*carousel*/
@@ -344,7 +272,7 @@ p {
 /* gallery home */
 
 .home-gallery .container-fluid {
-  width: 75%;
+  width: 80%;
 }
 
 .cell img {
@@ -364,21 +292,6 @@ p {
   width: calc(25% - 1rem);
 }
 
-@media screen and (max-width: 992px) {
-  .cell {
-    width: 33.333%;
-    width: calc(33.333% - 1rem);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .cell {
-    width: 50%;
-    width: calc(50% - 1rem);
-  }
-}
-
-
 /* infos-pratiques home*/
 
 .resume {
@@ -386,21 +299,17 @@ p {
 }
 
 .resume .container-fluid {
-  width: 75%;
+  width: 80%;
 }
 
 .resume h1 {
   color: #249300;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 5rem;
   font-weight: 500;
   margin-bottom: 0px;
 }
 
 .resume h2 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2.8rem;
-  font-weight: 500;
   color: #46484a;
   margin-bottom: 8px;
 }
@@ -413,7 +322,6 @@ p {
   padding-bottom: 2rem;
   padding-top: 3rem;
 }
-
 
 /* equipments extension */
 
@@ -471,7 +379,8 @@ p {
 }
 
 .dates-tarifs h2 {
-  margin-top: 2rem;
+  /*
+  margin-top: 2rem;*/
   color: #fff;
 }
 
@@ -486,7 +395,6 @@ p {
 
 .dates-tarifs .col-feature h4 {
   color: #fff;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -497,10 +405,9 @@ p {
   padding: 0px;
 }
 
-.dates-tarifs .col-feature li {
+.dates-tarifs .col-feature li,.dates-tarifs .col-feature p{
   color: #a0a0a0;
   font-size: .9rem;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.15;
   list-style-type:none;
 }
@@ -523,7 +430,7 @@ p {
 /*--------------- GITE -----------------------*/
 
 .gite-gallery .container-fluid {
-  width: 75%;
+  width: 80%;
 }
 
 
@@ -535,6 +442,13 @@ p {
 .acces .container-fluid {
   padding: 0rem;
   padding-top: 5rem;
+}
+.acces .container-fluid p {
+  width: 80%;
+}
+
+.acces p.lead em{
+  padding-right:30px;
 }
 
 .loc-item1 {
@@ -567,19 +481,6 @@ p {
   margin: 0 auto;
 }
 
-@media screen and (max-width:576px) {
-  .loc-item1 {
-    height: 150px;
-  }
-  .loc-item2 {
-    height: 200px;
-  }
-  .loc-item3 {
-    height: 150px;
-  }
-}
-
-
 /* angular google map + snazzy info window */
 
 agm-map {
@@ -593,14 +494,99 @@ agm-map {
 
 /* TODO: @include media-breakpoint-down(lg) ne marche pas dans bootstrap beta*/
 
+@media screen and (max-width:1024px) {
+  .navbar-brand-custom {
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .cell {
+    width: 33.333%;
+    width: calc(33.333% - 1rem);
+  }
+}
+
 @media screen and (max-width:880px) {
+  .panoramic h3 {
+    font-size: 20px;
+  }
+  .card-img-overlay {
+    padding-top: 22%;
+  }
+
   .home-carousel h3 {
     font-size: 20px;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .cell {
+    width: 50%;
+    width: calc(50% - 1rem);
+  }
+}
+
 @media screen and (max-width:576px) {
+
+  .panoramic h3 {
+    font-size: 15px;
+  }
+  .card-img-overlay {
+    padding-top: 22%;
+  }
+
+  section {
+    border-left: 2px solid #222;
+    border-right: 2px solid #222;
+  }
+  nav, ngb-carousel, .panoramic {
+    border-left: 2px solid #222;
+    border-right: 2px solid #222;
+  }
+
+  .loc-item1 {
+    height: 150px;
+  }
+  .loc-item2 {
+    height: 200px;
+  }
+  .loc-item3 {
+    height: 150px;
+  }
+
   .home-carousel h3 {
     font-size: 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .resume .container-fluid {
+    width: 100%;
+  }
+
+  .container-fluid .row{
+    padding: 0px;
+  }
+
+  .gallery, .resume, .dates-tarifs,.acces .container-fluid {
+    padding: 2rem 0;
+  }
+
+  .gallery p, .resume .container-fluid p.lead, .dates-tarifs p,.acces .container-fluid p {
+  font-size: 1.1rem;
+  line-height: 1.15;
+  }
+
+  .resume .spaced {
+    padding-bottom: 2rem;
+  }
+
+  .grid {
+    padding-bottom: 1rem;
   }
 }
