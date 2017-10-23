@@ -135,7 +135,6 @@ p {
 
 /* MODAL POPUP ---------------------------------------*/
 .modal {
-
     top:20%;
 }
 
@@ -177,9 +176,7 @@ p {
   padding-right:8px;
 }
 
-
 /*  GALLERY ---------------------------------------*/
-
 .gallery {
   padding: 5rem 0;
 }
@@ -209,7 +206,6 @@ p {
   text-transform: uppercase;
   margin-bottom: .5rem;
 }
-
 
 /*--------------- HOME -----------------------*/
 /* panoramic */
@@ -295,7 +291,7 @@ p {
 /* infos-pratiques home*/
 
 .resume {
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
 }
 
 .resume .container-fluid {
@@ -338,7 +334,8 @@ p {
 
 .resume .equipments {
   width: 100%;
-  /*padding-top: 1em;*/
+  padding-bottom: 5em;
+  margin-top: -2em;
 }
 
 .equipments .row {
@@ -346,8 +343,7 @@ p {
 }
 
 .equipments {
-  background: #f7f7f8;
-  /*padding: 5rem 0;*/
+background: #f7f7f8;
 }
 
 .equipments .box {
@@ -573,17 +569,29 @@ agm-map {
     padding: 0px;
   }
 
-  .gallery, .resume, .dates-tarifs,.acces .container-fluid {
+  .gallery, .dates-tarifs,.acces .container-fluid {
     padding: 2rem 0;
   }
+
+  .resume {
+    padding: 2rem 0 0 0;
+  }
+
 
   .gallery p, .resume .container-fluid p.lead, .dates-tarifs p,.acces .container-fluid p {
   font-size: 1.1rem;
   line-height: 1.15;
   }
 
+  .resume .equipments {
+    width: 100%;
+    padding-bottom: 2em;
+    margin-top: -2.5em;
+  }
+
   .resume .spaced {
     padding-bottom: 2rem;
+    padding-top: 2rem;
   }
 
   .grid {

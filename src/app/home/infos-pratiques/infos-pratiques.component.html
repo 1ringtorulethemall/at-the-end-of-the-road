@@ -46,17 +46,17 @@
     </div>
   </div>
   <!-- affichage optionnel - Liste complète des équipements -->
-  <div class="container-fluid  equipments" *ngIf='showList'>
+  <div class="container-fluid equipments" *ngIf='showList'>
     <div class="container">
       <div class="row text-left">
         <div class="col-sm-12 col-md-4 col-gallery">
           <div class="box">
-            <img class="img-fluid rounded-corners" src="assets/images/home/equipments/cuisine.jpg">
+            <img class="img-fluid rounded-corners" src={{datas.cuisineList?.img}}>
             <h5 class="mt-4 ml-4 mr-4">{{datas.cuisineList?.title}}</h5>
             <p class="ml-4 mr-4" [innerHTML]="datas.cuisineList?.text1"></p>
             <p class="emphasis ml-4 mr-4">{{datas.cuisineList?.emph2}}</p>
             <p class="ml-4 mr-4" [innerHTML]="datas.cuisineList?.text2"></p>
-            <p class="emphasis ml-4 mr-4" >{{datas.cuisineList?.emph3}}</p>
+            <p class="emphasis ml-4 mr-4">{{datas.cuisineList?.emph3}}</p>
             <p class="ml-4 mr-4" [innerHTML]="datas.cuisineList?.text3"></p>
             <p class="emphasis ml-4 mr-4">{{datas.cuisineList?.emph4}}</p>
             <p class="ml-4 mr-4" [innerHTML]="datas.cuisineList?.text4"></p>
@@ -64,7 +64,7 @@
         </div>
         <div class="col-sm-12 col-md-4 col-gallery">
           <div class="box">
-            <img class="img-fluid rounded-corners" src="assets/images/home/equipments/literie.jpg">
+            <img class="img-fluid rounded-corners" src={{datas.literieList?.img}}>
             <h5 class="mt-4 ml-4 mr-4">{{datas.literieList?.title}}</h5>
             <p class="emphasis ml-4 mr-4">{{datas.literieList?.emph1}}</p>
             <p class="ml-4 mr-4" [innerHTML]="datas.literieList?.text1"></p>
@@ -77,7 +77,7 @@
         </div>
         <div class="col-sm-12 col-md-4 col-gallery">
           <div class="box">
-            <img class="img-fluid rounded-corners" src="assets/images/home/equipments/cuisine.jpg">
+            <img class="img-fluid rounded-corners" src={{datas.diversList?.img}}>
             <h5 class="mt-4 ml-4 mr-4">{{datas.diversList?.title}}</h5>
             <p class="ml-4 mr-4" [innerHTML]="datas.diversList?.text1"></p>
             <p class="emphasis ml-4 mr-4">{{datas.diversList?.emph2}}</p>
@@ -88,7 +88,6 @@
             <p class="ml-4 mr-4" [innerHTML]="datas.diversList?.text4"></p>
           </div>
         </div>
-
       </div>
     </div>
   </div>

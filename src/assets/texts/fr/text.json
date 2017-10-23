@@ -48,28 +48,28 @@
     "srt": "Le gîte du bout de la route est une maison typique savoyarde de pierre et de bois. Nous sommes situés à Bellecombe, dans un hameau de moyenne montagne offrant une très belle vue sur le massif, au cœur du parc naturel des Bauges, entre Annecy et Chambéry. En plus du ski en hiver et des randos en été, de nombreuses autres activités sont possibles et nous serons ravis de vous faire partager nos coups de coeur !",
     "btnVoirPlus": "Voir plus d'images",
     "pictures": [{
-        "img": "assets/images/home/gallery/exterieurs.jpg"
+        "img": "assets/images/gite/exterieurs/SAM_3033-1024x768.jpg"
       },
       {
-        "img": "assets/images/home/gallery/sejour2.jpg"
+        "img": "assets/images/gite/sejour-cuisine/dsc_6200.jpg"
       },
       {
-        "img": "assets/images/home/gallery/sejour3.jpg"
+        "img": "assets/images/gite/sejour-cuisine/dsc_6183.jpg"
       },
       {
-        "img": "assets/images/home/gallery/sejour1.jpg"
+        "img": "assets/images/gite/sejour-cuisine/dsc_6186.jpg"
       },
       {
-        "img": "assets/images/home/gallery/cuisine.jpg"
+        "img": "assets/images/gite/sejour-cuisine/dsc_6193.jpg"
       },
       {
-        "img": "assets/images/home/gallery/chb-parents.jpg"
+        "img": "assets/images/gite/chambre-parents/05260017.jpg"
       },
       {
-        "img": "assets/images/home/gallery/chb-enfants.jpg"
+        "img": "assets/images/gite/chambre-enfants/dsc_6218.jpg"
       },
       {
-        "img": "assets/images/home/gallery/vue-ete.jpg",
+        "img": "assets/images/gite/chambre-enfants/f-chb-enfants-ete.jpg",
         "imgWinterView": "assets/images/home/gallery/vue-hiver.jpg"
       }
     ]
@@ -114,6 +114,7 @@
     "btnOff": "Afficher tous les équipements",
     "btnOn": "Masquer la liste complète",
     "cuisineList": {
+      "img":"assets/images/home/equipments/cuisine.jpg",
       "title": "Cuisine",
       "text1": "- Gazinière 4 feux et four à gaz<br> - Four micro onde<br> - Machine à café et bouilloire électrique<br> - Grille pain<br> - Grand frigo 180L et petit congélateur 20L<br>",
       "emph2": "Service et couverts :",
@@ -124,6 +125,7 @@
       "text4": "Caquelon, piques et plaque chauffante + l’adresse de la fromagerie <em class='fa fa-smile-o' aria-hidden='true'></em><br> Prêt du matériel à raclette sur demande"
     },
     "literieList": {
+      "img":"assets/images/home/equipments/literie.jpg",
       "title": "Literie",
       "emph1": "Dans la chambre parents :",
       "text1": "- 1 grand lit double 160x200cm avec sa couette chaude 200x200cm",
@@ -134,6 +136,7 @@
       "emph4": "Lit parapluie graco"
     },
     "diversList": {
+      "img":"assets/images/home/equipments/divers.jpg",
       "title": "Divers",
       "text1": "- Machine à laver le linge et étendoir<br> - Aspirateur efficace avec sacs de rechange, balais, serpillères ...",
       "emph2": "Salon de jardin :",
@@ -238,14 +241,14 @@
         "w_imgSummerView": "assets/images/gite/chambre-parents/f-chb-parents-ete.jpg",
         "w_imgWinterView": "assets/images/gite/chambre-parents/f-chb-parents-hiver.jpg",
         "outsideViewEnabled": false,
-        "title": "Blabla bla",
-        "comment": "Blabla bla"
+        "title": "Au calme !",
+        "comment": "Les murs en pierre (isolés) vous garantissent des nuits calmes. Vous serez au frais en été et au chaud en hiver !"
       },
       {
         "img": "assets/images/gite/chambre-parents/dsc_6205.jpg",
         "outsideViewEnabled": false,
-        "title": "Blabla bla",
-        "comment": "Blabla bla"
+        "title": "Le séjour vu depuis la chambre",
+        "comment": ""
       }
     ],
     "btnOF": "Ouvrir la fenêtre",
@@ -266,13 +269,13 @@
         "d_imgWinterView": "assets/images/gite/chambre-enfants/f-chb-enfants-hiver.jpg",
         "outsideViewEnabled": false,
         "title": "Accès au balcon",
-        "comment": ""
+        "comment": "Les murs en pierre (isolés) vous garantissent des nuits calmes. Vous serez au frais en été et au chaud en hiver !"
       },
       {
         "img": "assets/images/gite/chambre-enfants/dsc_6212.jpg",
         "outsideViewEnabled": false,
         "title": "Bds, livres de poches et jeux de société",
-        "comment": ""
+        "comment": "Car il n'y a pas de TV dans le gîte (mais le wifi)"
       },
       {
         "img": "assets/images/gite/chambre-enfants/05260026.jpg",
@@ -320,7 +323,7 @@
   },
   "extGallery": {
     "title": "Le jardin, la rambarde et le parking",
-    "srt": "bla bla",
+    "srt": "",
     "pictures": [{
         "img": "assets/images/gite/exterieurs/SAM_3033-1024x768.jpg",
         "title": "Vue générale du gîte",
@@ -333,7 +336,7 @@
       },
       {
         "img": "assets/images/gite/exterieurs/SAM_3039-1024x768.jpg",
-        "title": "Vue du jardin depuis le parking",
+        "title": "Vue du jardin depuis l'entrée",
         "comment": "Au fond, notre jardin."
       },
       {
@@ -348,7 +351,7 @@
       {
         "img": "assets/images/gite/exterieurs/SAM_3029-1024x768.jpg",
         "imgWinterView": "assets/images/gite/exterieurs/DSC_0670.jpg",
-        "title": "Le parking"
+        "title": "Le parking depuis la rue"
       }
     ]
   },
