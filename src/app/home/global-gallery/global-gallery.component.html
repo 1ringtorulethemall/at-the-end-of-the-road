@@ -8,6 +8,6 @@
         <img class="img-fluid rounded-corners" src={{p.imgWinterView}} *ngIf='p.imgWinterView && isWinter'>
       </div>
     </div>
-    <a class="btn btn-outline-secondary" [routerLink]="['/gite']" role="button">{{datas.btnVoirPlus}}</a>
+    <a class="btn btn-outline-secondary" [routerLink]="['/gite']" role="button" angulartics2On="click" angularticsCategory="nav" angularticsEvent="openGite" [angularticsProperties]="{label:'from home/gallery-->seeMoreImages'}">{{datas.btnVoirPlus}}</a>
   </div>
 </section>

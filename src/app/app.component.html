@@ -5,7 +5,7 @@
   </div>
   <div class="modal-body season-choice-body">
     <p>{{datas?.modalSeason.baseline}}</p>
-    <button *ngFor="let s of seasons; let i = index" type="button" class="btn btn-lg btn-outline-primary" (click)="c(s.name)">
+    <button *ngFor="let s of seasons; let i = index" type="button" class="btn btn-lg btn-outline-primary" (click)="c(s.name)" angulartics2On="click" angularticsCategory="seasonChoice" angularticsEvent="{{i==0?'summer':'winter'}}" [angularticsProperties]="{label:'from seasonModal'}">
        <em class="fa fa-2x fa-leaf" aria-hidden="true" *ngIf='i==0'></em>
        <em class="fa fa-2x fa-snowflake-o" aria-hidden="true" *ngIf='i==1'></em>
        {{datas?.modalSeason.service[i].name}}
@@ -34,7 +34,7 @@
         </p>
       </div>
     </div>
-    <p [innerHTML]="datas?.modalContact.mail"></p>
+    <a angulartics2On="click" angularticsCategory="contact" angularticsEvent="startTypingMsge" [angularticsProperties]="{label:'from contactModal'}" href="mailto:{{datas?.modalContact.mailAdress}}?subject={{datas?.modalContact.mailSubject}}"><em class='fa fa-2x fa-envelope-o' aria-hidden='true'></em>{{datas?.modalContact.mailAdress}}</a>
   </div>
 </ng-template>
 
@@ -51,19 +51,19 @@
   <div class="collapse navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navGite">
     <ul class="navbar-nav ml-xl-5 pl-xl-5 ml-lg-0 pl-lg-0">
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" (click)="navbarCollapsed = true" role="button"><em class="fa fa-fw fa-home" aria-hidden="true" ></em>{{datas?.nav[0].item | uppercase}}</a>
+        <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" (click)="navbarCollapsed = true" role="button" angulartics2On="click" angularticsCategory="nav" angularticsEvent="openHome" [angularticsProperties]="{label:'from nav'}"><em class="fa fa-fw fa-home" aria-hidden="true" ></em>{{datas?.nav[0].item | uppercase}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/gite']" routerLinkActive="active" (click)="navbarCollapsed = true" role="button"><em class="fa fa-fw fa-bed" aria-hidden="true" ></em>{{datas?.nav[1].item | uppercase}}</a>
+        <a class="nav-link" [routerLink]="['/gite']" routerLinkActive="active" (click)="navbarCollapsed = true" role="button" angulartics2On="click" angularticsCategory="nav" angularticsEvent="openGite" [angularticsProperties]="{label:'from nav'}"><em class="fa fa-fw fa-bed" aria-hidden="true" ></em>{{datas?.nav[1].item | uppercase}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/acces']" routerLinkActive="active" (click)="navbarCollapsed = true" role="button"><em class="fa fa-fw fa-map-marker" aria-hidden="true" ></em>{{datas?.nav[2].item | uppercase}}</a>
+        <a class="nav-link" [routerLink]="['/acces']" routerLinkActive="active" (click)="navbarCollapsed = true" role="button" angulartics2On="click" angularticsCategory="nav" angularticsEvent="openAcces" [angularticsProperties]="{label:'from nav'}"><em class="fa fa-fw fa-map-marker" aria-hidden="true" ></em>{{datas?.nav[2].item | uppercase}}</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-xl-5 ml-lg-0 pl-lg-0">
       <li class="nav-item">
         <!-- NOTE: [routerLink]="" allows to show handcursor -->
-        <a class="nav-link" (click)="setSeason();navbarCollapsed = true" [routerLink]="" role="button" *ngIf='isSeasonChoosen'><em class="fa fa-fw fa-leaf" aria-hidden="true" *ngIf='!isWinter'></em><em class="fa fa-fw fa-snowflake-o" aria-hidden="true" *ngIf='isWinter'></em>{{datas?.nav[3].item | uppercase}}</a>
+        <a class="nav-link" (click)="setSeason();navbarCollapsed = true" [routerLink]="" role="button" *ngIf='isSeasonChoosen' angulartics2On="click" angularticsCategory="seasonChoice" angularticsEvent="openModalWithClick" [angularticsProperties]="{label:'from nav'}"><em class="fa fa-fw fa-leaf" aria-hidden="true" *ngIf='!isWinter'></em><em class="fa fa-fw fa-snowflake-o" aria-hidden="true" *ngIf='isWinter'></em>{{datas?.nav[3].item | uppercase}}</a>
       </li>
       <li class="nav-item">
         <ngbd-modal2 (click)="navbarCollapsed = true"></ngbd-modal2>

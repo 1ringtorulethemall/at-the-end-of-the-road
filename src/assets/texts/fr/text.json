@@ -34,8 +34,8 @@
       "txt": "Le gîte du bout de route<br> Broissieux - 73340 BELLECOMBE EN BAUGES:",
       "tel1": "04 79 63 38 06",
       "tel2": "06 75 09 94 59",
-      "mail": "<a href='mailto:contact@auboutdelaroute.com?subject=Contact depuis auboutdelaroute.com'><em class='fa fa-2x fa-envelope-o' aria-hidden='true'></em>contact@auboutdelaroute.com</a>"
-
+      "mailAdress": "contact@auboutdelaroute.com",
+      "mailSubject": "Contact depuis auboutdelaroute.com"
     }
   },
   "HOME-----------------": "",

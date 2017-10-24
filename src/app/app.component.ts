@@ -11,6 +11,9 @@ import { Season } from './shared/seasons/season';
 
 import { TextService } from "./shared/texts/text.service";
 
+//ga
+import { Angulartics2GoogleAnalytics } from 'angulartics2';
+
 @Component({
   moduleId: module.id,
   selector: 'gite-app',
@@ -31,7 +34,7 @@ export class AppComponent implements OnInit {
 
   //subscription to display the contact modal
   @ViewChild('contact') modalContent: ElementRef;
-  constructor(private modalService: ModalService, private ngbModal: NgbModal, private seasonService: SeasonService, private _textService: TextService) {
+  constructor(private modalService: ModalService, private ngbModal: NgbModal, private seasonService: SeasonService, private _textService: TextService, angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {
 
     modalService.subscription.subscribe(() => {
       this.ngbModal.open(this.modalContent);

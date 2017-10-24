@@ -30,8 +30,10 @@ import { AccesComponent } from './acces/acces.component';
 import { MapModule } from './custom-modules/map/map.module';
 
 import {HttpModule} from '@angular/http';
-import {TextService} from './shared/texts/text.service'
+import {TextService} from './shared/texts/text.service';
 
+//ga
+import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 
 @NgModule({
   imports: [
@@ -46,7 +48,8 @@ import {TextService} from './shared/texts/text.service'
       { path: 'acces', component: AccesComponent },
       { path: "", redirectTo: 'home', pathMatch: "full" },//.com
       { path: "**", redirectTo: 'home', pathMatch: "full" }//page inexistante
-    ])
+    ]),
+    Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ])
   ],
   declarations: [AppComponent, HomeComponent, NgbdModal1, NgbdModal2, GlobalGalleryComponent, InfosPratiquesComponent, TarifsDisposComponent, GiteComponent, AccesComponent, SejourCuisineComponent, ChbParentsComponent, ChbEnfantsComponent, PlanComponent, ExterieursComponent, SdbWcComponent, PanoramicComponent],
   bootstrap: [AppComponent],

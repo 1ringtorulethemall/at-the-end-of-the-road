@@ -1,7 +1,7 @@
 <section class="gite-gallery sc-gallery text-center">
   <div class="container-fluid gallery">
     <h2>{{datas.title}}</h2>
-    <p class="lead"  [innerHTML]="datas.srt"></p>
+    <p class="lead" [innerHTML]="datas.srt"></p>
     <div class="divider"></div>
     <div class="row">
       <div class="col-md-6 col-lg-4 col-gallery" *ngFor="let p of pictures; let i = index">
@@ -13,10 +13,12 @@
         <h4 class="mt-4">{{p.title}}</h4>
         <p>{{p.comment}}</p>
         <p>
-          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.w_imgSummerView || p.w_imgWinterView">{{p.outsideViewEnabled?datas.btnFF:datas.btnOF}}</a>
+          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.w_imgSummerView || p.w_imgWinterView" angulartics2On="click" angularticsCategory="outsideView" angularticsEvent="{{p.outsideViewEnabled?'open':'close'}}"
+            [angularticsProperties]="{label:'from gite/sc'}" >{{p.outsideViewEnabled?datas.btnFF:datas.btnOF}}</a>
         </p>
         <p>
-          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.d_imgSummerView || p.d_imgWinterView">{{p.outsideViewEnabled?datas.btnFP:datas.btnOP}}</a>
+          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.d_imgSummerView || p.d_imgWinterView" angulartics2On="click" angularticsCategory="outsideView" angularticsEvent="{{p.outsideViewEnabled?'open':'close'}}"
+            [angularticsProperties]="{label:'from gite/sc'}">{{p.outsideViewEnabled?datas.btnFP:datas.btnOP}}</a>
         </p>
       </div>
     </div>

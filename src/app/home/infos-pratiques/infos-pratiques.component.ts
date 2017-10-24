@@ -29,7 +29,6 @@ export class InfosPratiquesComponent implements OnInit{
   //toggle vue complète des équipements
   toggleList(): void {
     this.showList = !this.showList;
-    console.log('tac');
   }
 
 }
