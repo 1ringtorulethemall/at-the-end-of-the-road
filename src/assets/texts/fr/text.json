@@ -44,7 +44,7 @@
     "srt": "Suivez la flèche pour trouver le gîte"
   },
   "globalGallery": {
-    "title": "Bienvenue !",
+    "title": "Bienvenue ! (Au 1 janvier 2019, les deux chambres, sdb et wc viennent d'être refaites à neuf : Les photos correspondant à ces parties ne sont pas encore à jour. De même pour le plafond du gîte qui est blanc maintenant pour plus de clarté)",
     "srt": "Le gîte du bout de la route est une maison typique savoyarde de pierre et de bois. Nous sommes situés à Bellecombe, dans un hameau de moyenne montagne offrant une très belle vue sur le massif, au cœur du parc naturel des Bauges, entre Annecy et Chambéry. En plus du ski en hiver et des randos en été, de nombreuses autres activités sont possibles et nous serons ravis de vous faire partager nos coups de coeur !",
     "btnVoirPlus": "Voir plus d'images",
     "pictures": [{
@@ -98,7 +98,7 @@
           "txt": "Wifi"
         },
         {
-          "txt": "Salle de bain avec baignoire"
+          "txt": "Salle de bain avec douche"
         },
         {
           "txt": "Matériel bébé"
@@ -107,7 +107,7 @@
           "txt": "Linge de lit sur demande"
         },
         {
-          "txt": "Animaux acceptés sur accord"
+          "txt": "Chiens et chats non acceptés"
         }
       ]
     },
@@ -152,13 +152,13 @@
     "baseline": "(Hors vacances scolaires, les jours d'arrivée et de départ sont flexibles. Nous louons du samedi au samedi uniquement pendant les vacances scolaires)",
     "pricing": {
       "pList": [{
-          "p": "semaine vacances scolaires : 370€"
+          "p": "semaine vacances scolaires : 420€"
         },
         {
-          "p": "semaine hors vacances scolaires : 280€"
+          "p": "semaine hors vacances scolaires : 320€"
         },
         {
-          "p": "week-end : 150€"
+          "p": "week-end : 170€"
         }
       ],
       "text1": "À cela s'ajoutent votre consommation électrique ainsi qu'une taxe de séjour de 0,90€ par adulte. Nous proposons le linge de lit en option au tarif de 5€"
