@@ -2,7 +2,8 @@
   "MAIN": "",
   "main": {
     "appTitle": "Le gîte du bout de la route",
-    "nav": [{
+    "nav": [
+      {
         "item": "Accueil"
       },
       {
@@ -21,7 +22,8 @@
     "modalSeason": {
       "title": "À quelle saison souhaitez-vous venir ?",
       "baseline": "Vous pouvez choisir ici de vertes prairies ou des paysages enneigés :",
-      "service": [{
+      "service": [
+        {
           "name": "Été"
         },
         {
@@ -44,10 +46,11 @@
     "srt": "Suivez la flèche pour trouver le gîte"
   },
   "globalGallery": {
-    "title": "Bienvenue ! (Au 1 janvier 2019, les deux chambres, sdb et wc viennent d'être refaites à neuf : Les photos correspondant à ces parties ne sont pas encore à jour. De même pour le plafond du gîte qui est blanc maintenant pour plus de clarté)",
-    "srt": "Le gîte du bout de la route est une maison typique savoyarde de pierre et de bois. Nous sommes situés à Bellecombe, dans un hameau de moyenne montagne offrant une très belle vue sur le massif, au cœur du parc naturel des Bauges, entre Annecy et Chambéry. En plus du ski en hiver et des randos en été, de nombreuses autres activités sont possibles et nous serons ravis de vous faire partager nos coups de coeur !",
+    "title": "Bienvenue !",
+    "srt": "Le gîte du bout de la route est une maison typique savoyarde de pierre et de bois. Nous sommes situés à Bellecombe, dans un hameau de moyenne montagne offrant une très belle vue sur le massif, au cœur du parc naturel des Bauges, entre Annecy et Chambéry. En plus du ski en hiver et des randos en été, de nombreuses autres activités sont possibles et nous serons ravis de vous faire partager nos coups de coeur ! <br><br> (Les deux chambres, sdb et wc viennent d'être refaites à neuf : Les photos correspondant à ces parties ne sont pas encore à jour mais la distribution reste identique. De même pour le plafond du gîte qui est blanc maintenant pour plus de clarté)",
     "btnVoirPlus": "Voir plus d'images",
-    "pictures": [{
+    "pictures": [
+      {
         "img": "assets/images/gite/exterieurs/SAM_3033-1024x768.jpg"
       },
       {
@@ -78,7 +81,8 @@
     "title": "Informations pratiques",
     "baseline": "Le bouton en bas de paragraphe vous donne accès à la liste complète des équipements du gîte. ",
     "nfos": {
-      "level1": [{
+      "level1": [
+        {
           "number": "6",
           "srt": "personnes",
           "txt": "c'est notre capacité d'accueil maximum"
@@ -89,12 +93,13 @@
           "txt": "Une chambre 160x200 - Une chambre 3 lits 90x200 <br> Un canapé lit 2 personnes dans le séjour"
         },
         {
-          "number": "2",
+          "number": "3",
           "srt": "étoiles",
           "txt": "attribuées par l'office de tourisme"
         }
       ],
-      "level2": [{
+      "level2": [
+        {
           "txt": "Wifi"
         },
         {
@@ -114,7 +119,7 @@
     "btnOff": "Afficher tous les équipements",
     "btnOn": "Masquer la liste complète",
     "cuisineList": {
-      "img":"assets/images/home/equipments/cuisine.jpg",
+      "img": "assets/images/home/equipments/cuisine.jpg",
       "title": "Cuisine",
       "text1": "- Gazinière 4 feux et four à gaz<br> - Four micro onde<br> - Machine à café et bouilloire électrique<br> - Grille pain<br> - Grand frigo 180L et petit congélateur 20L<br>",
       "emph2": "Service et couverts :",
@@ -125,7 +130,7 @@
       "text4": "Caquelon, piques et plaque chauffante + l’adresse de la fromagerie <em class='fa fa-smile-o' aria-hidden='true'></em><br> Prêt du matériel à raclette sur demande"
     },
     "literieList": {
-      "img":"assets/images/home/equipments/literie.jpg",
+      "img": "assets/images/home/equipments/literie.jpg",
       "title": "Literie",
       "emph1": "Dans la chambre parents :",
       "text1": "- 1 grand lit double 160x200cm avec sa couette chaude 200x200cm",
@@ -136,7 +141,7 @@
       "emph4": "Lit parapluie graco"
     },
     "diversList": {
-      "img":"assets/images/home/equipments/divers.jpg",
+      "img": "assets/images/home/equipments/divers.jpg",
       "title": "Divers",
       "text1": "- Machine à laver le linge et étendoir<br> - Aspirateur efficace avec sacs de rechange, balais, serpillères ...",
       "emph2": "Salon de jardin :",
@@ -151,7 +156,8 @@
     "title": "Tarifs & disponibilités",
     "baseline": "(Hors vacances scolaires, les jours d'arrivée et de départ sont flexibles. Nous louons du samedi au samedi uniquement pendant les vacances scolaires)",
     "pricing": {
-      "pList": [{
+      "pList": [
+        {
           "p": "semaine vacances scolaires : 420€"
         },
         {
@@ -161,7 +167,7 @@
           "p": "week-end : 170€"
         }
       ],
-      "text1": "À cela s'ajoutent votre consommation électrique ainsi qu'une taxe de séjour de 0,90€ par adulte. Nous proposons le linge de lit en option au tarif de 5€"
+      "text1": "À cela s'ajoutent votre consommation électrique ainsi qu'une taxe de séjour de 1,10€ par adulte. Nous proposons le linge de lit en option au tarif de 5€"
     },
     "availability": {
       "text": "Le gîte est libre sauf"
@@ -172,7 +178,8 @@
   "sjGallery": {
     "title": "Le séjour et la cuisine",
     "srt": "Composé d’un large espace cuisine et d’un salon spacieux, le séjour est la plus grande pièce du gîte : Il est équipé d'un canapé-lit 2 personnes en appoint et d'un poële à bois. Le matin et le soir, la lumière est traversante du Roc des Boeufs au Mont Colombier.",
-    "pictures": [{
+    "pictures": [
+      {
         "img": "assets/images/gite/sejour-cuisine/dsc_6200.jpg",
         "d_imgSummerView": "assets/images/gite/sejour-cuisine/pf-entree-ete.jpg",
         "d_imgWinterView": "assets/images/gite/sejour-cuisine/pf-entree-hiver.jpg",
@@ -223,12 +230,12 @@
     "btnFF": "Fermer la fenêtre",
     "btnOP": "Ouvrir la porte",
     "btnFP": "Fermer la porte"
-
   },
   "chbParGallery": {
     "title": "La chambre parents",
     "srt": "Orientée nord-est et ensoleillée le matin, elle offre une vue sur le roc des Boeufs qui domine le lac d'Annecy et Bellecombe chef-lieu à 1km.",
-    "pictures": [{
+    "pictures": [
+      {
         "img": "assets/images/gite/chambre-parents/05260017.jpg",
         "w_imgSummerView": "assets/images/gite/chambre-parents/f-chb-parents-ete.jpg",
         "w_imgWinterView": "assets/images/gite/chambre-parents/f-chb-parents-hiver.jpg",
@@ -257,7 +264,8 @@
   "chbEnfGallery": {
     "title": "La chambre enfants",
     "srt": "Orientée sud, elle offre une vue sur le Colombier et la vallée qui donne sur les pistes de ski de Margeriaz ou des Aillons.<br />La chambre enfants est équipée de 3 couchages.",
-    "pictures": [{
+    "pictures": [
+      {
         "img": "assets/images/gite/chambre-enfants/dsc_6218.jpg",
         "outsideViewEnabled": false,
         "title": "2 couchages superposés 90x200 et un lit tiroir optionnel",
@@ -304,7 +312,8 @@
   "sdbGallery": {
     "title": "La salle de bain et les toilettes",
     "srt": "La salle de bain est séparée des toilettes et elle est équipée d'une baignoire.",
-    "pictures": [{
+    "pictures": [
+      {
         "img": "assets/images/gite/sdb-wc/dsc_6226.jpg",
         "title": "Salle de bain et toilettes",
         "comment": "Elles sont situées entre les deux chambres"
@@ -324,7 +333,8 @@
   "extGallery": {
     "title": "Le jardin, la rambarde et le parking",
     "srt": "",
-    "pictures": [{
+    "pictures": [
+      {
         "img": "assets/images/gite/exterieurs/SAM_3033-1024x768.jpg",
         "title": "Vue générale du gîte",
         "comment": "Le gîte est au premier étage. Au dessous, la cave permet de ranger ses skis ou ses vélos."
@@ -361,7 +371,6 @@
     "img": "assets/images/gite/plan.jpg",
     "txt1": "75m2 sur un étage",
     "txt2": "1 grand séjour-cuisine, 2 chambres et un canapé-lit dans le salon, 1 grand balcon extérieur fermé, parking et jardin."
-
   },
   "LOC_ACCES---------": "",
   "acces": {
@@ -370,7 +379,8 @@
     "btnMapO": "Ouvrir Google maps",
     "btnMapF": "Fermer Google maps"
   },
-  "markersList": [{
+  "markersList": [
+    {
       "lat": 45.738109,
       "lng": 6.124398,
       "nfoTitle": "Le gîte du bout de la route",
