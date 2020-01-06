@@ -11,7 +11,7 @@ import { MapBroissieuxComponent } from './map-broissieux/map-broissieux.componen
   imports: [
     CommonModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCT7eQ4OnaopTrAasz0HwyPNRJ3Qo5mWms'
+      apiKey: 'XXXXXX'
     }),
     // todo commented on 2020/01
    //AgmSnazzyInfoWindowModule
