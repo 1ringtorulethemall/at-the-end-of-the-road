@@ -1,12 +1,14 @@
-import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs/Subject';
+import {Injectable} from '@angular/core';
+import {Subject} from 'rxjs';
 
 @Injectable()
 export class ModalService {
 
-  constructor() { }
+  constructor() {
+  }
 
   subscription = new Subject();
+
   showModal() {
     this.subscription.next();
   }
