@@ -1,9 +1,7 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-
-import { Subscription } from 'rxjs/Subscription';
-import { SeasonService } from '../../shared/seasons/season.service';
-
-import { TextService } from "../../shared/texts/text.service";
+import {Component, OnInit, OnDestroy} from '@angular/core';
+import {Subscription} from 'rxjs';
+import {SeasonService} from '../../shared/seasons/season.service';
+import {TextService} from '../../shared/texts/text.service';
 
 @Component({
   selector: 'global-gallery',
@@ -14,7 +12,7 @@ export class GlobalGalleryComponent implements OnInit, OnDestroy {
   subscription: Subscription;
   isWinter: boolean;
 
-  datas: any = ""; // no initialization = error
+  datas: any = ''; // no initialization = error
   pictures: picture[];
   errorMessage: string;
 
@@ -31,10 +29,10 @@ export class GlobalGalleryComponent implements OnInit, OnDestroy {
   }
 
   getText() {
-    this._textService.getText("globalGallery").subscribe(datas => {
-      this.datas = datas;
-      this.pictures = datas.pictures;
-    }
+    this._textService.getText('globalGallery').subscribe(datas => {
+        this.datas = datas;
+        this.pictures = datas.pictures;
+      }
       , error => this.errorMessage = <any>error);
   }
 

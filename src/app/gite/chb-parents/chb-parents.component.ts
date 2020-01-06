@@ -1,9 +1,7 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-
-import { Subscription } from 'rxjs/Subscription';
-import { SeasonService } from '../../shared/seasons/season.service';
-
-import { TextService } from "../../shared/texts/text.service";
+import {Component, OnInit, OnDestroy} from '@angular/core';
+import {Subscription} from 'rxjs';
+import {SeasonService} from '../../shared/seasons/season.service';
+import {TextService} from '../../shared/texts/text.service';
 
 @Component({
   selector: 'chb-parents',
@@ -15,7 +13,7 @@ export class ChbParentsComponent implements OnInit, OnDestroy {
   subscription: Subscription;
   isWinter: boolean;
 
-  datas: any = ""; // no initialization = error
+  datas: any = ''; // no initialization = error
   pictures: picture[];
   errorMessage: string;
 
@@ -37,43 +35,44 @@ export class ChbParentsComponent implements OnInit, OnDestroy {
   }
 
   getText() {
-    this._textService.getText("chbParGallery").subscribe(datas => {
-      this.datas = datas;
-      this.pictures = datas.pictures;
-    }
+    this._textService.getText('chbParGallery').subscribe(datas => {
+        this.datas = datas;
+        this.pictures = datas.pictures;
+      }
       , error => this.errorMessage = <any>error);
   }
 
   //gestion vues fenêtres
   toggleVue(i: number): void {
-    this.pictures[i].outsideViewEnabled = !this.pictures[i].outsideViewEnabled
+    this.pictures[i].outsideViewEnabled = !this.pictures[i].outsideViewEnabled;
   }
-/*local
-  pictures: picture[] = [
-    {
-      img: "assets/images/gite/chambre-parents/05260017.jpg",
-      w_imgSummerView: 'assets/images/gite/chambre-parents/f-chb-parents-ete.jpg',
-      w_imgWinterView: 'assets/images/gite/chambre-parents/f-chb-parents-hiver.jpg',
-      outsideViewEnabled: false,
-      title: 'Un grand lit double 160x200',
-      comment: 'Nous pouvons fournir le linge de lit sur demande',
-    },
-    {
-      img: "assets/images/gite/chambre-parents/dsc_6206.jpg",
-      w_imgSummerView: 'assets/images/gite/chambre-parents/f-chb-parents-ete.jpg',
-      w_imgWinterView: 'assets/images/gite/chambre-parents/f-chb-parents-hiver.jpg',
-      outsideViewEnabled: false,
-      title: 'Blabla bla',
-      comment: 'Blabla bla',
-    },
-    {
-      img: "assets/images/gite/chambre-parents/dsc_6205.jpg",
-      outsideViewEnabled: false,
-      title: 'Blabla bla',
-      comment: 'Blabla bla',
-    }
-  ]
-  */
+
+  /*local
+    pictures: picture[] = [
+      {
+        img: "assets/images/gite/chambre-parents/05260017.jpg",
+        w_imgSummerView: 'assets/images/gite/chambre-parents/f-chb-parents-ete.jpg',
+        w_imgWinterView: 'assets/images/gite/chambre-parents/f-chb-parents-hiver.jpg',
+        outsideViewEnabled: false,
+        title: 'Un grand lit double 160x200',
+        comment: 'Nous pouvons fournir le linge de lit sur demande',
+      },
+      {
+        img: "assets/images/gite/chambre-parents/dsc_6206.jpg",
+        w_imgSummerView: 'assets/images/gite/chambre-parents/f-chb-parents-ete.jpg',
+        w_imgWinterView: 'assets/images/gite/chambre-parents/f-chb-parents-hiver.jpg',
+        outsideViewEnabled: false,
+        title: 'Blabla bla',
+        comment: 'Blabla bla',
+      },
+      {
+        img: "assets/images/gite/chambre-parents/dsc_6205.jpg",
+        outsideViewEnabled: false,
+        title: 'Blabla bla',
+        comment: 'Blabla bla',
+      }
+    ]
+    */
 
 }
 

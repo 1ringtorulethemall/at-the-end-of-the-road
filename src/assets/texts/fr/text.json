@@ -33,9 +33,9 @@
     },
     "modalContact": {
       "title": "Pour nous contacter",
-      "txt": "Le gîte du bout de route<br> Broissieux - 73340 BELLECOMBE EN BAUGES:",
-      "tel1": "04 79 63 38 06",
-      "tel2": "06 75 09 94 59",
+      "txt": "Le gîte du bout de route<br>407 route de Broissieux - Broissieux<br>73340 BELLECOMBE EN BAUGES",
+      "tel1": "04.79.63.38.06",
+      "tel2": "06.75.09.94.59",
       "mailAdress": "contact@auboutdelaroute.com",
       "mailSubject": "Contact depuis auboutdelaroute.com"
     }
@@ -95,7 +95,7 @@
         {
           "number": "3",
           "srt": "étoiles",
-          "txt": "attribuées par l'office de tourisme"
+          "txt": "attribuées par l'office de tourisme<br>via les Gîtes de France"
         }
       ],
       "level2": [
@@ -375,7 +375,7 @@
   "LOC_ACCES---------": "",
   "acces": {
     "title": "Accès au gîte",
-    "srt": "<em class='fa fa-car fa-fw' aria-hidden='true'></em>Depuis la statue de la vierge, 1km sous Bellecombe en Bauges, il faut suivre le panneau Broissieux en restant sur la route goudronnée qui monte ...<br>Après un virage à 90° sur la gauche, le gîte est sur la gauche à 100m.",
+    "srt": "<em class='fa fa-car fa-fw' aria-hidden='true'></em> 407 route de Broissieux - Broissieux - 73340 Bellecombe en Bauges<br>Depuis la statue de la vierge, 1km sous Bellecombe en Bauges, suivre le panneau Broissieux en restant sur la route goudronnée qui monte ...<br>Après un virage à 90° sur la gauche, le gîte est sur la gauche à 100m, au numéro 407.",
     "btnMapO": "Ouvrir Google maps",
     "btnMapF": "Fermer Google maps"
   },

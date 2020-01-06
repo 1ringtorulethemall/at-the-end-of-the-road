@@ -43,3 +43,5 @@ Thumbs.db
 
 #perso
 images
+/.htaccess
+/notes-perso.md

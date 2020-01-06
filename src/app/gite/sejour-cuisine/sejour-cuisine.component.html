@@ -6,19 +6,39 @@
     <div class="row">
       <div class="col-md-6 col-lg-4 col-gallery" *ngFor="let p of pictures; let i = index">
         <img class="img-fluid rounded-corners" src={{p.img}} *ngIf='!p.outsideViewEnabled'>
-        <img class="img-fluid rounded-corners" src={{p.w_imgWinterView}} *ngIf='p.w_imgWinterView && p.outsideViewEnabled && isWinter'>
-        <img class="img-fluid rounded-corners" src={{p.w_imgSummerView}} *ngIf='p.w_imgSummerView && p.outsideViewEnabled && !isWinter'>
-        <img class="img-fluid rounded-corners" src={{p.d_imgWinterView}} *ngIf='p.d_imgWinterView && p.outsideViewEnabled && isWinter'>
-        <img class="img-fluid rounded-corners" src={{p.d_imgSummerView}} *ngIf='p.d_imgSummerView && p.outsideViewEnabled && !isWinter'>
+        <img class="img-fluid rounded-corners" src={{p.w_imgWinterView}}
+             *ngIf='p.w_imgWinterView && p.outsideViewEnabled && isWinter'>
+        <img class="img-fluid rounded-corners" src={{p.w_imgSummerView}}
+             *ngIf='p.w_imgSummerView && p.outsideViewEnabled && !isWinter'>
+        <img class="img-fluid rounded-corners" src={{p.d_imgWinterView}}
+             *ngIf='p.d_imgWinterView && p.outsideViewEnabled && isWinter'>
+        <img class="img-fluid rounded-corners" src={{p.d_imgSummerView}}
+             *ngIf='p.d_imgSummerView && p.outsideViewEnabled && !isWinter'>
         <h4 class="mt-4">{{p.title}}</h4>
         <p>{{p.comment}}</p>
         <p>
-          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.w_imgSummerView || p.w_imgWinterView" angulartics2On="click" angularticsCategory="outsideView" angularticsEvent="{{p.outsideViewEnabled?'open':'close'}}"
-            [angularticsProperties]="{label:'from gite/sc'}" >{{p.outsideViewEnabled?datas.btnFF:datas.btnOF}}</a>
+          <a *ngIf="p.w_imgSummerView || p.w_imgWinterView"
+             class="btn btn-outline-secondary"
+             (click)='toggleVue(i)'
+             role="button"
+             angulartics2On="click"
+             angularticsCategory="outsideView"
+             angularticsAction="{{p.outsideViewEnabled?'open':'close'}}"
+             [angularticsProperties]="{label:'from gite/sc'}">
+            {{p.outsideViewEnabled ? datas.btnFF : datas.btnOF}}
+          </a>
         </p>
         <p>
-          <a class="btn btn-outline-secondary" (click)='toggleVue(i)' role="button" *ngIf="p.d_imgSummerView || p.d_imgWinterView" angulartics2On="click" angularticsCategory="outsideView" angularticsEvent="{{p.outsideViewEnabled?'open':'close'}}"
-            [angularticsProperties]="{label:'from gite/sc'}">{{p.outsideViewEnabled?datas.btnFP:datas.btnOP}}</a>
+          <a *ngIf="p.d_imgSummerView || p.d_imgWinterView"
+             class="btn btn-outline-secondary"
+             (click)='toggleVue(i)'
+             role="button"
+             angulartics2On="click"
+             angularticsCategory="outsideView"
+             angularticsAction="{{p.outsideViewEnabled?'open':'close'}}"
+             [angularticsProperties]="{label:'from gite/sc'}">
+            {{p.outsideViewEnabled ? datas.btnFP : datas.btnOP}}
+          </a>
         </p>
       </div>
     </div>

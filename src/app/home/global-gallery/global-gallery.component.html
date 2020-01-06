@@ -4,10 +4,22 @@
     <p class="lead" [innerHTML]="datas.srt"></p>
     <div class="grid mt-5">
       <div class="cell" *ngFor="let p of pictures; let i = index">
-        <img class="img-fluid rounded-corners" src={{p.img}} *ngIf='!p.imgWinterView ||(p.imgWinterView && !isWinter)'>
-        <img class="img-fluid rounded-corners" src={{p.imgWinterView}} *ngIf='p.imgWinterView && isWinter'>
+        <img *ngIf='!p.imgWinterView ||(p.imgWinterView && !isWinter)'
+             class="img-fluid rounded-corners"
+             src={{p.img}}>
+        <img *ngIf='p.imgWinterView && isWinter'
+             class="img-fluid rounded-corners"
+             src={{p.imgWinterView}}>
       </div>
     </div>
-    <a class="btn btn-outline-secondary" [routerLink]="['/gite']" role="button" angulartics2On="click" angularticsCategory="nav" angularticsEvent="openGite" [angularticsProperties]="{label:'from home/gallery-->seeMoreImages'}">{{datas.btnVoirPlus}}</a>
+    <a class="btn btn-outline-secondary"
+       [routerLink]="['/gite']"
+       role="button"
+       angulartics2On="click"
+       angularticsCategory="nav"
+       angularticsAction="openGite"
+       [angularticsProperties]="{label:'from home/gallery-->seeMoreImages'}">
+      {{datas.btnVoirPlus}}
+    </a>
   </div>
 </section>

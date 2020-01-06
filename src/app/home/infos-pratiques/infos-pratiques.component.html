@@ -42,7 +42,15 @@
       </div>
     </div>
     <div class="spaced">
-      <a class="btn btn-outline-secondary" role="button" (click)='toggleList()' angulartics2On="click" angularticsCategory="nav" angularticsEvent="{{showList?'show':'hide'}}MoreEquipments" [angularticsProperties]="{label:'from home/infosPratiques'}">{{showList?datas.btnOn:datas.btnOff}}</a>
+      <a class="btn btn-outline-secondary"
+         role="button"
+         (click)='toggleList()'
+         angulartics2On="click"
+         angularticsCategory="nav"
+         angularticsAction="{{showList?'show':'hide'}}MoreEquipments"
+         [angularticsProperties]="{label:'from home/infosPratiques'}">
+        {{showList ? datas.btnOn : datas.btnOff}}
+      </a>
     </div>
   </div>
   <!-- affichage optionnel - Liste complète des équipements -->
