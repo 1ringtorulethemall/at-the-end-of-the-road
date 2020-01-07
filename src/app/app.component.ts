@@ -25,7 +25,7 @@ export class AppComponent implements OnInit, OnDestroy {
   navbarCollapsed = true;
 
   //subscription to display the contact modal
-  @ViewChild('contact') modalContent: ElementRef;
+  @ViewChild('contact',{static: false}) modalContent: ElementRef;
 
   constructor(private modalService: ModalService, private ngbModal: NgbModal, private seasonService: SeasonService, private _textService: TextService, angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {
 
@@ -44,8 +44,8 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   //season choice (summer vs winter)
-  seasons = this.seasonService.SEASONS; // data binding
-  @ViewChild('seasonChoice') seasonChoiceContent: ElementRef;
+  seasons = this.seasonService.SEASONS;
+  @ViewChild('seasonChoice', {static: false}) seasonChoiceContent: ElementRef;
 
   setSeason(): void {
     let ngbModalOptions: NgbModalOptions = {
