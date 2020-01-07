@@ -30,7 +30,7 @@
     "@angular/router": "^8.2.14",
     "@ng-bootstrap/ng-bootstrap": "^3.3.1",
     "angulartics2": "^7.0.0",
-    "bootstrap": "4.0.0-beta",
+    "bootstrap": "4.4.1",
     "core-js": "^3.6.2",
     "rxjs": "^6.5.4",
     "rxjs-compat": "^6.5.4",
