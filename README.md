@@ -31,4 +31,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## TODO
 
 before publication, change `apiKey: 'XXXXXX'`
-angular-maps reactivation
+ng update :  @angular/core                      6.1.10 -> 8.2.14         ng update @angular/core
+textservice note

@@ -1,14 +1,15 @@
-import { Component, OnInit} from '@angular/core';
-import { TextService } from "../../shared/texts/text.service";
+import {Component, OnInit} from '@angular/core';
+import {TextService} from '../../shared/texts/text.service';
 
 @Component({
   selector: 'infos-pratiques',
   templateUrl: './infos-pratiques.component.html'
 })
 
-export class InfosPratiquesComponent implements OnInit{
+export class InfosPratiquesComponent implements OnInit {
 
-  constructor(private _textService: TextService) { }
+  constructor(private _textService: TextService) {
+  }
 
   showList: boolean = false;
   errorMessage: string;
@@ -17,16 +18,15 @@ export class InfosPratiquesComponent implements OnInit{
     this.getText();
   }
 
-  datas: any =""; // no initialization = error
+  datas: any = ''; // no initialization = error
 
   getText() {
-    this._textService.getText("nfosPratiques").subscribe(datas => {
-      this.datas = datas;
-    }
-            , error => this.errorMessage = <any>error);
+    this._textService.getText('nfosPratiques').subscribe(datas => {
+        this.datas = datas;
+      }
+      , error => this.errorMessage = <any>error);
   }
 
-  //toggle vue complète des équipements
   toggleList(): void {
     this.showList = !this.showList;
   }

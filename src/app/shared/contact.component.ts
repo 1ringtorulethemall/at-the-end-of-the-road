@@ -51,7 +51,7 @@ export class NgbdModal1 implements OnInit {
          angularticsAction="open"
          [angularticsProperties]="{label:'from nav'}"><em class="fa fa-paper-plane fa-fw" aria-hidden="true"></em>{{btnTxt | uppercase}}</a>
   `
-  // NOTE: [routerLink]="" allows to show handcursor
+
 })
 
 export class NgbdModal2 implements OnInit {
