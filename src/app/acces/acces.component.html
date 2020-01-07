@@ -13,7 +13,6 @@
        [angularticsProperties]="{label:'from acces'}">
       {{showMap ? datas.btnMapF : datas.btnMapO}}
     </a>
-
     <div class="row mt-5 no-gutters" *ngIf='!showMap'>
       <div class="col-lg-12 loc-item1">
       </div>
@@ -23,9 +22,7 @@
       </div>
     </div>
     <div class="map" *ngIf='showMap'>
-      <!-- angular google maps -->
-      <!-- todo big update with angular8 -->
-      <!-- <map-broissieux></map-broissieux> -->
+      <map-broissieux></map-broissieux>
     </div>
   </div>
 </section>

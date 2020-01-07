@@ -1,6 +1,4 @@
-//marche si je supprime tout
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { NgbdModal1 } from './contact.component';
 
 describe('NgbdModal1', () => {

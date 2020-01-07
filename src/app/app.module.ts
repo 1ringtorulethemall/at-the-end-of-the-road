@@ -22,7 +22,7 @@ import {SdbWcComponent} from './gite/sdb-wc/sdb-wc.component';
 import {PlanComponent} from './gite/plan/plan.component';
 import {ExterieursComponent} from './gite/exterieurs/exterieurs.component';
 import {AccesComponent} from './acces/acces.component';
-// import { MapModule } from './custom-modules/map/map.module';
+import {MapModule} from './custom-modules/map/map.module';
 import {HttpClientModule} from '@angular/common/http';
 import {TextService} from './shared/texts/text.service';
 
@@ -33,14 +33,14 @@ import {Angulartics2Module} from 'angulartics2';
     BrowserModule,
     HttpClientModule,
     //  CarouselModule,
-    // MapModule, //todo big update with angular8
+    MapModule,
     NgbModule.forRoot(), // destination ngbCollapse navbar (ng-bootstrap)
     RouterModule.forRoot([
       {path: 'home', component: HomeComponent},
       {path: 'gite', component: GiteComponent},
       {path: 'acces', component: AccesComponent},
-      {path: '', redirectTo: 'home', pathMatch: 'full'},//.com
-      {path: '**', redirectTo: 'home', pathMatch: 'full'}//page inexistante
+      {path: '', redirectTo: 'home', pathMatch: 'full'},
+      {path: '**', redirectTo: 'home', pathMatch: 'full'} //page not found
     ]),
     Angulartics2Module.forRoot()
   ],
