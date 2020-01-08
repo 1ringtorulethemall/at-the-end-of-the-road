@@ -21,7 +21,7 @@
     ],
     "modalSeason": {
       "title": "À quelle saison souhaitez-vous venir ?",
-      "baseline": "Vous pouvez choisir ici de vertes prairies ou des paysages enneigés :",
+      "baseline": "En fonction de votre choix, les portes et fenêtres vous offriront de vertes prairies ou des paysages enneigés :",
       "service": [
         {
           "name": "Été"
